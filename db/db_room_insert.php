@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['create'])){
+    if(isset($_POST['create_room'])){
 
         $room_category = $_POST['room_category'];
 

@@ -6,5 +6,5 @@
         <option value="3">Triple</option>
         <option value="4">Suite</option>
     </select>
-    <input type="submit" name="create" value="Create room">
+    <input type="submit" name="create_room" value="Insertar habitacion">
 </form>
