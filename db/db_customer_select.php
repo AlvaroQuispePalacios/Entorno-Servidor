@@ -9,7 +9,10 @@
         $resultado = mysqli_query($con, $consulta);
 
         $mostrar = mysqli_fetch_all($resultado, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la columna ejemplo:
-
+        echo sizeof($mostrar);
+        echo "<br>";
+        echo $mostrar[1]['customer_id'];
+        echo "<br>";
         print_r($mostrar);
         mysqli_close($con);
     }

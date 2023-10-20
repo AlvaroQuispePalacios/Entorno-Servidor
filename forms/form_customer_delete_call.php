@@ -1,0 +1,6 @@
+<h3>Eliminar un cliente</h3>
+<form action="./forms/form_customer_delete.php" method="POST">
+    <label for="">Identificador:</label>
+    <input type="number" min="0" name="customer_id">
+    <input type="submit" name="customer_delete_call" value="Eliminar">
+</form>
