@@ -18,7 +18,10 @@
     <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/forms/form_customer_update_call.php')?>
     
      <!-- Eliminar un cliente -->
-     <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php')?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php')?>
     
+    <!-- Eliminar un cliente -->
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/forms/form_customer_login.php')?>
+
     <?php include('./footer.php'); ?>
 </html>
