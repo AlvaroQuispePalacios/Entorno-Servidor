@@ -1,6 +1,8 @@
 <?php
-    session_start();
-    $user = $_SESSION;
+    if(isset($_POST['submit'])){
+        session_start();
+        $user = $_SESSION['user'];
+    }
     
 ?>
 <head>
@@ -23,3 +25,8 @@
 
         </div>
     </div>
+    <h3>
+        <?php
+            echo htmlspecialchars($user);
+        ?>
+    </h3>

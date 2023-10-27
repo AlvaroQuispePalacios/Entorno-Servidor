@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['customer_update_call'])){
+    if(isset($_POST['submit'])){
         $customer_id = $_POST['customer_id'];
 
         //Conexion a la base de datos

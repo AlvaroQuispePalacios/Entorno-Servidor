@@ -1,13 +1,10 @@
-
 <?php
-
     include('../header.php');
+    
+    if(isset($_POST['submit'])){
 
-    if(isset($_POST['form_customer_login'])){
         $customer_email = $_POST['customer_email'];
         $pwd = $_POST['pwd'];
-
-
 
         //Conexion a la base de datos
         include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
@@ -19,10 +16,12 @@
 
         $mostrar = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
         
+
+
         print_r($mostrar);
         //Toma 
-        $user = $mostrar[0]['customer_id'];
-
+        // $user = $mostrar[0]['customer_id'];
+        // echo $user;
         // if(empty($mostrar)){
         //     echo "No existe";
         // }

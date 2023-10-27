@@ -6,5 +6,5 @@
     <label for="">Contraseña</label>
     <input type="text" name="pwd">
     <br>
-    <input type="submit" name="form_customer_login" value="Entrar">
+    <input type="submit" name="submit" value="Entrar">
 </form>

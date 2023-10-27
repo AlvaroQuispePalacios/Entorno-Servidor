@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['customer_update'])){
+    if(isset($_POST['submit'])){
 
         $customer_id = $_POST['customer_id'];
         $customer_name = $_POST['customer_name'];
