@@ -1,5 +1,5 @@
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
 <?php
-    include('../header.php');
     
     if(isset($_POST['submit'])){
 
@@ -16,7 +16,7 @@
 
         $mostrar = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
         
-
+        $_SESSION['user'] = $mostrar[0]['customer_name'];
 
         print_r($mostrar);
         //Toma 

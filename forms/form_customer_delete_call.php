@@ -1,3 +1,5 @@
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+
 <h3>Eliminar un cliente</h3>
 <form action="./forms/form_customer_delete.php" method="POST">
     <label for="">Identificador:</label>
