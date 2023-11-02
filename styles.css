@@ -14,7 +14,7 @@
 
 .navbar{
     background-color: var(--navbar-color) !important;
-
+    height: 80px;
 }
 
 

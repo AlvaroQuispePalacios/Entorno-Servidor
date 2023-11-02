@@ -1,7 +1,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
 
 <?php
-    if(isset($_POST['customer_delete'])){
+    if(isset($_POST['submit'])){
 
         $customer_id = $_POST['customer_id'];
 

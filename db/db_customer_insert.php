@@ -1,7 +1,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
 
 <?php
-    if(isset($_POST['insert_customer'])){
+    if(isset($_POST['submit'])){
 
         $customer_name = $_POST['customer_name'];
         $customer_surname = $_POST['customer_surname'];

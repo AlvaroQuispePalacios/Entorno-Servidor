@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $user = $_SESSION['user']??"amigo";
+    $user = $_SESSION['user']??"Duck";
 ?>
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark text-center">
-            <div class="container">
-              <a class="navbar-brand" href="/student044/dwes/proyectoHotel/index.php">
-                <img class="logo img-fluid rounded-5" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark">
+            <div class="container-fluid mx-5">
+              <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php">
+                <img class="logo img-fluid rounded-5 p-0" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
               </a>
+              <h4 class="text-warning-emphasis font-monospace m-0">
+                Hola <?php echo $user;?>
+              </h4>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -40,4 +43,4 @@
           </nav> 
     </header>
 
-        <?php echo $user;?>
+        

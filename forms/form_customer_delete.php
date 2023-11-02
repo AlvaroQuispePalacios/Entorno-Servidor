@@ -48,7 +48,7 @@
     <label for="">Email: </label>
     <input type="text"  readonly value="<?php echo $customer_email?>">
     <br>
-    <input type="submit" name="customer_delete" value="Eliminar permanentemente">
+    <input type="submit" name="submit" value="Eliminar permanentemente">
 </form>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

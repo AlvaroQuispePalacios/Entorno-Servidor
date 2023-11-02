@@ -13,7 +13,7 @@
     <label for="">Email: </label>
     <input type="text" name="customer_email">
     <br>
-    <input type="submit" name="insert_customer" value="Crear cliente">
+    <input type="submit" name="submit" value="Crear cliente">
 </form>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
