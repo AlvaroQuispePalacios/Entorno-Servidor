@@ -1,3 +1,4 @@
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
 <form action="index.php" method="POST">
     <label for="">Categoria de la habitacion</label>
     <select name="room_category">
@@ -8,3 +9,5 @@
     </select>
     <input type="submit" name="create_room" value="Insertar habitacion">
 </form>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

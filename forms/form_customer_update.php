@@ -88,3 +88,5 @@
     <br>
     <input type="submit" name="customer_update" value="Actualizar">
 </form>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

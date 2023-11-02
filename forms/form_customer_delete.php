@@ -50,3 +50,5 @@
     <br>
     <input type="submit" name="customer_delete" value="Eliminar permanentemente">
 </form>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

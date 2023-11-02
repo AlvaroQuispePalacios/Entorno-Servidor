@@ -30,3 +30,4 @@
 
     }
 ?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

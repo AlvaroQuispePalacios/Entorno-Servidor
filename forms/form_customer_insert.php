@@ -15,3 +15,5 @@
     <br>
     <input type="submit" name="insert_customer" value="Crear cliente">
 </form>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

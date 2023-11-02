@@ -6,3 +6,5 @@
     <input type="number" min="0" name="customer_id">
     <input type="submit" name="submit" value="Actualizar">
 </form>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

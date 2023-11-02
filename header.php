@@ -5,30 +5,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="/student044/dwes/proyectoHotel/styles.css">
 
-    <title>Hotel Los Perdidos</title>
+    <title>Ducks</title>
 </head>
 <body>
-    <div class="cabecera">
-        <h1 class="titulo">Hotel Los perdidos</h1>
-        <div class="contenedor-lista">
-            <ul class="lista">
-                <li class="itemLista"><a href="/student044/dwes/proyectoHotel/index.php">Inicio</a></li>
-                <li class="itemLista"><a href="/student044/dwes/proyectoHotel/forms/form_customer_select.php">Customer Select</a></li>
-                <li class="itemLista"><a href="/student044/dwes/proyectoHotel/forms/form_customer_insert.php">Customer Insert</a></li>
-                <li class="itemLista"><a href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a></li>
-                <li class="itemLista"><a href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a></li>
-                <li class="itemLista"></li>
-                <li class="itemLista"></li>
-                <li class="itemLista"></li>
-            </ul>
-            
-        </div>
-    </div>
-    <h3>
-        <?php
-            echo $user;
-        ?>
-    </h3>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark text-center">
+            <div class="container">
+              <a class="navbar-brand" href="/student044/dwes/proyectoHotel/index.php">
+                <img class="logo img-fluid rounded-5" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
+              </a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-lg-auto">
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_select.php">Customer Select</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_insert.php">Customer Insert</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
+                </div>
+              </div>
+            </div>
+          </nav> 
+    </header>
+
+        <?php echo $user;?>

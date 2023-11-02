@@ -1,4 +1,24 @@
-body{
+:root{
+    --body-color: #fff9fb;
+    --content-color: #ede7e3;
+    --navbar-color: #101113;
+    --card-color :hsla(214, 48%, 64%, 0.723);
+    --other: #f46036;
+}
+
+.logo{
+    padding: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+.navbar{
+    background-color: var(--navbar-color) !important;
+
+}
+
+
+/* body{
     padding: 0;
     margin: 0;
     background-color: rgb(227, 227, 227);
@@ -63,4 +83,4 @@ p{
 
 .copyright{
     background-color: rgb(77, 143, 143);
-}
+} */
