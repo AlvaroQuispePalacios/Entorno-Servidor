@@ -70,7 +70,7 @@
 ?>
 
 <h3>Actualizar datos del cliente</h3>
-<form action="../db/db_customer_update.php" method="POST">
+<form action="/student044/dwes/proyectoHotel/db/db_customer_update.php" method="POST">
     <label for="">Identificador: </label>
     <input type="text" name="customer_id" readonly value="<?php echo $customer_id?>">
     <br>
