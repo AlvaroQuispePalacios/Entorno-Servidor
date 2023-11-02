@@ -25,11 +25,15 @@
               <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-lg-auto">
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_login.php">Login</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_select.php">Customer Select</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_insert.php">Customer Insert</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_reservation_insert.php">Reservation Insert</a>
+                  
                 </div>
               </div>
             </div>
