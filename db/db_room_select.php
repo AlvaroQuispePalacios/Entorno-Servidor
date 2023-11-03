@@ -12,14 +12,14 @@
         //Conexion a la base de datos
         include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
                     
-        //
+        //Recuerda poner las fechas entre comillas simples porque sin comillas no te funciona el WHERE :,c
         $consulta = ("SELECT room_id, room_category_name, room_category_price, room_category_description, room_category_img FROM 044_room INNER JOIN 044_room_category ON 044_room.room_category = 044_room_category.room_category_id WHERE 044_room.room_id NOT IN (
             SELECT 044_reservation.room_id
             FROM 044_reservation
             WHERE (
-                044_reservation.reservation_date_in <= $date_in AND 044_reservation.reservation_date_out >= $date_out
+                044_reservation.reservation_date_in <= '$date_in' AND 044_reservation.reservation_date_out >= '$date_out'
             ) OR (
-                044_reservation.reservation_date_in <= $date_out AND 044_reservation.reservation_date_out >= $date_in
+                044_reservation.reservation_date_in <= '$date_out' AND 044_reservation.reservation_date_out >= '$date_in'
             )
         );");
         $resultado = mysqli_query($con, $consulta);
@@ -57,14 +57,17 @@
     ?>
     
         <div class="card m-2" style="width: 18rem;">
-        
+            
             <img src="<?php print_r($room['room_category_img'])?>" class="card-img-top" alt="Room Img">
+            
             <h5 class="card-title m-2"><?php print_r($room['room_category_name'])?></h5>
+
             <h6 class="card-subtitle m-2 mt-0 text-body-secondary"><?php print_r($room['room_category_price'])?>€ por noche</h6>
+
             <div class="card-body p-3 pt-1">
                 <p class="card-text"><?php print_r($room['room_category_description'])?></p>
                 <div class="text-end">
-                    <button type="button" class="btn btn-success">Reservar</button>
+                <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/miniForms/mini_form_reservation_insert.php')?>
                 </div>
             </div>
         </div>

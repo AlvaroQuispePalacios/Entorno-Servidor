@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark">
             <div class="container-fluid mx-5">
-              <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php">
+              <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php"></a>
                 <img class="logo img-fluid rounded-5 p-0" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
                 <h5 class="text-warning font-monospace m-0 d-inline">
                   Hola <?php echo $user_name;?>
