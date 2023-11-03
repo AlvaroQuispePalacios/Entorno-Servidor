@@ -1,7 +1,7 @@
 <?php
     session_start();
     $user_name = $_SESSION['user_name']??"Duck";
-    $user_id = $_SESSION['user_id'];
+    $user_id = $_SESSION['user_id']??"";
 ?>
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
             <div class="container-fluid mx-5">
               <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php">
                 <img class="logo img-fluid rounded-5 p-0" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
-                <h5 class="text-warning-emphasis font-monospace m-0 d-inline">
+                <h5 class="text-warning font-monospace m-0 d-inline">
                   Hola <?php echo $user_name;?>
                 </h5>
               </a>
@@ -35,6 +35,8 @@
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
+                  <!-- Si lo cambias con db_room_select aparece las habitaciones sin tener que presionar en el boton de form_room_select -->
+                  <!-- <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_room_select.php">Room Select</a> -->
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_reservation_insert.php">Reservation Insert</a>
                   
