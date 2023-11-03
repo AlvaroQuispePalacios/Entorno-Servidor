@@ -16,8 +16,9 @@
 
         $mostrar = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
         
-        $_SESSION['user'] = $mostrar[0]['customer_name'];
-
+        $_SESSION['user_name'] = $mostrar[0]['customer_name'];
+        
+        $_SESSION['user_id'] = $mostrar[0]['customer_id'];
         print_r($mostrar);
         //Toma 
         // $user = $mostrar[0]['customer_id'];

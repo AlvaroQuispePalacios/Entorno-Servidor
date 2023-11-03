@@ -1,6 +1,7 @@
 <?php
     session_start();
-    $user = $_SESSION['user']??"Duck";
+    $user_name = $_SESSION['user_name']??"Duck";
+    $user_id = $_SESSION['user_id'];
 ?>
 <head>
     <meta charset="UTF-8">
@@ -18,10 +19,10 @@
             <div class="container-fluid mx-5">
               <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php">
                 <img class="logo img-fluid rounded-5 p-0" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
+                <h5 class="text-warning-emphasis font-monospace m-0 d-inline">
+                  Hola <?php echo $user_name;?>
+                </h5>
               </a>
-              <h4 class="text-warning-emphasis font-monospace m-0">
-                Hola <?php echo $user;?>
-              </h4>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
