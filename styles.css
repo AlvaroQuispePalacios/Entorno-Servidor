@@ -1,86 +1,50 @@
 :root{
     --body-color: #fff9fb;
-    --content-color: #ede7e3;
-    --navbar-color: #101113;
+    --content-color: #F6F6EF;
+    --navbar-color: #141414;
     --card-color :hsla(214, 48%, 64%, 0.723);
     --other: #f46036;
+    /* #848C8A
+    #80828C 
+    F5F7F8*/
+    
 }
+
+/*--------------------------- Navbar -------------------------------*/
 
 .logo{
     padding: 5px;
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
 
 .navbar{
     background-color: var(--navbar-color) !important;
-    height: 80px;
 }
 
-
-/* body{
-    padding: 0;
-    margin: 0;
-    background-color: rgb(227, 227, 227);
-}
-.cabecera{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 5px;
-    background-color: rgb(58, 58, 58);
-    border: .1 solid black;
-}
-.titulo{
-    color: white;
+/*--------------------------- Login -------------------------------*/
+.login-card-content{
+    background-color: var(--content-color);
+    padding: 2.5rem;
 }
 
-.lista{
-    display: flex;
-    list-style: none;
-    align-items: center;
+.login-card-background-img{
+    background-image: url(/student044/dwes/proyectoHotel/img/Hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-.cuerpo{
-    padding: 15%;
-    padding-top: 2%;
+.login-card-background{
+    background-color: var(--navbar-color);
 }
 
-a{
-    color: white;
-    font-size: 18px;
+.login-card-img{
+    max-width: 20rem;
+    opacity: .9;
 }
 
-.itemLista{
-    padding: 7%;
-    margin-left: 10px;
-    background-color: rgb(59, 59, 59);
-    border-radius: 15px;    
+.login-card-title{
+    font-weight: bold;
 }
 
-.tarjeta{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: aliceblue;
-    width: 700px;
-    border: 3px solid rgba(0, 0, 0, 0.308);
-    border-radius: 15px;
-}
-.tarjeta-contenido{
-    display: flex;
-}
-img{
-    width: 70%;
-    height: 200px;
-    border-radius: 15px;
-}
-p{
-    padding: 2%;
-}
-
-.copyright{
-    background-color: rgb(77, 143, 143);
-} */

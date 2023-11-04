@@ -16,8 +16,8 @@
 <body>
     <header>
         <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark">
-            <div class="container-fluid mx-5">
-              <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php"></a>
+            <div class="container-fluid text-center">
+              <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php">
                 <img class="logo img-fluid rounded-5 p-0" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
                 <h5 class="text-warning font-monospace m-0 d-inline">
                   Hola <?php echo $user_name;?>
@@ -27,7 +27,9 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+
                 <div class="navbar-nav ms-lg-auto">
+
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_login.php">Login</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_select.php">Customer Select</a>
@@ -35,15 +37,14 @@
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
-                  <!-- Si lo cambias con db_room_select aparece las habitaciones sin tener que presionar en el boton de form_room_select -->
-                  <!-- <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_room_select.php">Room Select</a> -->
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_reservation_insert.php">Reservation Insert</a>
-                  
                 </div>
               </div>
             </div>
           </nav> 
     </header>
+    <main>
+
 
         
