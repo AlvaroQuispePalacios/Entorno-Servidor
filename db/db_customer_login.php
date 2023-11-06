@@ -29,7 +29,7 @@
         // }
 
         mysqli_close($con);
-
+        header("Location: /student044/dwes/proyectoHotel/index.php");
     }
 ?>
 
