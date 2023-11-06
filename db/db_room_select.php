@@ -67,7 +67,7 @@
             <div class="card-body p-3 pt-1">
                 <p class="card-text"><?php print_r($room['room_category_description'])?></p>
                 <div class="text-end">
-                <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/miniForms/mini_form_reservation_insert.php')?>
+                    <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/miniForms/mini_form_reservation_insert.php')?>
                 </div>
             </div>
         </div>
