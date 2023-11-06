@@ -7,17 +7,54 @@
         include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
                     
         //Buscar infomacion(SELECT)
-        $consulta = ("SELECT * FROM 044_customer");
-        $resultado = mysqli_query($con, $consulta);
+        $sql = ("SELECT * FROM 044_customer");
+        $query = mysqli_query($con, $sql);
 
-        $mostrar = mysqli_fetch_all($resultado, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la columna ejemplo:
-        echo sizeof($mostrar);
-        echo "<br>";
-        echo $mostrar[1]['customer_id'];
-        echo "<br>";
-        print_r($mostrar);
+        $customers = mysqli_fetch_all($query, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la columna ejemplo:
+
         mysqli_close($con);
     }
 ?>
+<div class="d-flex justify-content-center align-items-center">
+
+    <table class="border mt-5 text-center">
+        <tr class="border p-2">
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Customer Surname</th>
+            <th>Customer Phone</th>
+            <th>Customer Email</th>
+            <th>Customer Password</th>
+        </tr>
+    
+        <?php
+            foreach($customers as $customer){ 
+        ?>
+            <tr class="border">
+                <td>
+                    <?php print_r($customer['customer_id']);?>
+                </td>
+                <td>
+                    <?php print_r($customer['customer_name']);?>
+                </td>
+                <td>
+                    <?php print_r($customer['customer_surname']);?>
+                </td>
+                <td>
+                    <?php print_r($customer['customer_phone']);?>
+                </td>
+                <td>
+                    <?php print_r($customer['customer_email']);?>
+                </td>
+                <td>
+                    <?php print_r($customer['customer_password']);?>
+                </td>
+            </tr>
+            
+        <?php
+        } 
+        ?>
+    </table>
+</div>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>

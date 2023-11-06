@@ -38,7 +38,8 @@
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
                   <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_reservation_insert.php">Reservation Insert</a>
+                  <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_log_out.php">Log Out</a>
+
                 </div>
               </div>
             </div>
