@@ -7,8 +7,6 @@
         // echo $date_in;
         // echo $date_out;
 
-        //
-
         //Conexion a la base de datos
         include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
                     

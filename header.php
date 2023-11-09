@@ -2,6 +2,8 @@
     session_start();
     $user_name = $_SESSION['user_name']??"Duck";
     $user_id = $_SESSION['user_id']??"";
+    $user_rol = $_SESSION['user_rol']??"";
+
 ?>
 <head>
     <meta charset="UTF-8">
@@ -16,7 +18,7 @@
 <body>
     <header>
         <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark">
-            <div class="container-fluid text-center">
+            <div class="container-fluid">
               <a class="navbar-brand p-0" href="/student044/dwes/proyectoHotel/index.php">
                 <img class="logo img-fluid rounded-5 p-0" src="/student044/dwes/proyectoHotel/img/LogoHotelSinFondo.png" alt="Logo">
                 <h5 class="text-warning font-monospace m-0 d-inline">
@@ -27,25 +29,74 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <!-- Condicion que nos muestra ciertas funcionalidades en base a el rol del usuario NULL es un usuario anonimo
+                customer es un usuario registrado y admin es un administrador  
+              -->
+                <?php
+                  if($user_rol == 'customer'){ ?>
 
-                <div class="navbar-nav ms-lg-auto">
+                    <div class="navbar-nav ms-lg-auto">
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Habitaciones</a>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_log_out.php">Log Out</a>
+                    </div>
 
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_login.php">Login</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_select.php">Customer Select</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_insert.php">Customer Insert</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
-                  <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_log_out.php">Log Out</a>
 
-                </div>
+
+                <?php } elseif($user_rol == 'admin') { ;?>
+
+                    <div class="navbar-nav ms-lg-auto">
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
+                      <!-- <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_select.php">Customer Select</a>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_insert.php">Customer Insert</a>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a> -->
+                      <!-- CRUD CUSTOMERS -->
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Customer
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_customer_select.php">Select</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_customer_insert.php">Insert</a></li>
+                          <li><a class="dropdown-item"  href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Update</a></li>
+                          <li><a class="dropdown-item"  href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Delete</a></li>
+                        </ul>
+                      </div>
+                      <!-- CRUD ROOMS-->
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Rooms
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Select</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Insert</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_update_call.php">Update</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_delete_call.php">Delete</a></li>
+                        </ul>
+                      </div>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
+                      <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_log_out.php">Log Out</a>
+
+
+                    </div> 
+
+
+                <?php } else {?>
+
+                      <div class="navbar-nav ms-lg-auto">
+                        <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
+                        <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Habitaciones</a>
+                        <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_login.php">Login</a>
+                      </div>
+
+                <?php }?>
               </div>
             </div>
           </nav> 
+          
     </header>
     <main>
-
 
         

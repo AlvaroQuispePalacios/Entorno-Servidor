@@ -20,6 +20,9 @@
         $_SESSION['user_name'] = $mostrar[0]['customer_name'];
         
         $_SESSION['user_id'] = $mostrar[0]['customer_id'];
+
+        $_SESSION['user_rol'] = $mostrar[0]['customer_rol'];
+
         print_r($mostrar);
         //Toma 
         // $user = $mostrar[0]['customer_id'];

@@ -25,6 +25,7 @@
             <th>Customer Phone</th>
             <th>Customer Email</th>
             <th>Customer Password</th>
+            <th>Customer Rol</th>
         </tr>
     
         <?php
@@ -48,6 +49,9 @@
                 </td>
                 <td>
                     <?php print_r($customer['customer_password']);?>
+                </td>
+                <td>
+                    <?php print_r($customer['customer_rol']);?>
                 </td>
             </tr>
             
