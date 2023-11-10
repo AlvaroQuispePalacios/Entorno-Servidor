@@ -23,7 +23,6 @@
 
         $_SESSION['user_rol'] = $mostrar[0]['customer_rol'];
 
-        print_r($mostrar);
         //Toma 
         // $user = $mostrar[0]['customer_id'];
         // echo $user;

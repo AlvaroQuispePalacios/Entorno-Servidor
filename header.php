@@ -51,6 +51,7 @@
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_insert.php">Customer Insert</a>
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_update_call.php">Customer Update</a>
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Customer Delete</a> -->
+
                       <!-- CRUD CUSTOMERS -->
                       <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,6 +64,7 @@
                           <li><a class="dropdown-item"  href="/student044/dwes/proyectoHotel/forms/form_customer_delete_call.php">Delete</a></li>
                         </ul>
                       </div>
+
                       <!-- CRUD ROOMS-->
                       <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -75,6 +77,20 @@
                           <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_delete_call.php">Delete</a></li>
                         </ul>
                       </div>
+
+                      <!-- CRUD RESERVATION-->
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Reservation
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_reservation_select.php">Select</a></li>
+                          <!-- <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Insert</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_update_call.php">Update</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_delete_call.php">Delete</a></li> -->
+                        </ul>
+                      </div>
+
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_log_out.php">Log Out</a>
