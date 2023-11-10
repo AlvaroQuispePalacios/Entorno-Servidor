@@ -14,7 +14,7 @@
 ?>
 <div class="d-flex justify-content-center align-items-center">
 
-<table class="border mt-5 text-center">
+<table class="border mt-3 text-center">
     <tr class="border p-2">
         <th>Reservation ID</th>
         <th>Customer ID</th>

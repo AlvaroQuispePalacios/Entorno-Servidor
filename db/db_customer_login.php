@@ -23,13 +23,6 @@
 
         $_SESSION['user_rol'] = $mostrar[0]['customer_rol'];
 
-        //Toma 
-        // $user = $mostrar[0]['customer_id'];
-        // echo $user;
-        // if(empty($mostrar)){
-        //     echo "No existe";
-        // }
-
         mysqli_close($con);
         header("Location: /student044/dwes/proyectoHotel/index.php");
     }

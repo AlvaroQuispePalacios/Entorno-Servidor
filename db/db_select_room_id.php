@@ -11,15 +11,14 @@
         //Query que obtendra los datos 
         $sql = "SELECT * FROM 044_room WHERE room_id = $room_id";
 
-        $resultado = mysqli_query($con, $sql);
+        $query = mysqli_query($con, $sql);
 
-        $mostrar = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
+        $room = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
         //Capturar los valores del array que es la fila con los datos del cliente que pedimos con el identificador
-        $customer_name = $mostrar[0]['customer_name'];
-        $customer_surname = $mostrar[0]['customer_surname']; 
-        $customer_phone = $mostrar[0]['customer_phone']; 
-        $customer_email = $mostrar[0]['customer_email']; 
+        $room_id = $room[0]['room_id'];
+        $room_category = $room[0]['room_category']; 
+        $room_status = $room[0]['room_status']; 
 
         mysqli_close($con);
 
