@@ -1,4 +1,4 @@
-<!-- Codigo que buscara los datos del cliente en base al id 
+<!-- Codigo que buscara los datos de las habitaciones en base al 
     Estan incluidos en:
 -->
 <?php
