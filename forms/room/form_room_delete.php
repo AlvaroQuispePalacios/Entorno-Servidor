@@ -5,7 +5,7 @@
 
 <h3>Eliminar una habitacion</h3>
 
-<form action="/student044/dwes/proyectoHotel/db/db_room_delete.php" method="POST">
+<form action="/student044/dwes/proyectoHotel/db/room/db_room_delete.php" method="POST">
     
     <label for="">Identificador Habitacion</label>
     <input type="text" name="room_id" value="<?php echo $room_id;?>" readonly>

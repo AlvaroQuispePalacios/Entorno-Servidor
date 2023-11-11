@@ -1,7 +1,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
 
 <h3>Crear a un cliente</h3>
-<form action="/student044/dwes/proyectoHotel/db/db_customer_insert.php" method="POST">
+<form action="/student044/dwes/proyectoHotel/db/customer/db_customer_insert.php" method="POST">
     <label for="">Nombre: </label>
     <input type="text" name="customer_name">
     <br>

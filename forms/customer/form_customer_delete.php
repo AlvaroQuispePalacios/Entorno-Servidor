@@ -3,7 +3,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_select_customer_id.php')?>
 
 <h2>Eliminar un cliente</h2>
-<form action="/student044/dwes/proyectoHotel/db/db_customer_delete.php" method="POST">
+<form action="/student044/dwes/proyectoHotel/db/customer/db_customer_delete.php" method="POST">
     <h4>Datos del cliente</h4>
     <label for="">Identificador: </label>
     <input type="text" name="customer_id" readonly value="<?php echo $customer_id?>">

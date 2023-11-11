@@ -14,7 +14,7 @@
 
             <h2 class="login-card-title">Login</h2>
 
-            <form action="/student044/dwes/proyectoHotel/db/db_customer_login.php" method="POST">
+            <form action="/student044/dwes/proyectoHotel/db/db_login.php" method="POST">
                 
                 <!-- Email -->
                 <div class="form-floating mb-3" >

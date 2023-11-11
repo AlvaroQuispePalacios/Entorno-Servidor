@@ -4,7 +4,7 @@
 
 
 <h3>Actualizar habitacion</h3>
-<form action="/student044/dwes/proyectoHotel/db/db_room_update.php" method="POST">
+<form action="/student044/dwes/proyectoHotel/db/room/db_room_update.php" method="POST">
     <label for="">Identificador de habitacion:</label>
     <input type="text" value="<?php echo $room_id?>" name="room_id" readonly>
 
@@ -40,17 +40,23 @@
     <label for="">Estado: </label>
     <select name="room_status">
         <?php if($room_status == 'READY'){?>
+
             <option value="READY" selected="selected">READY</option>
             <option value="CHECK_IN">CHECK_IN</option>
             <option value="CHEK_OUT">CHECK_OUT</option>
-        <?php }elseif($room_category == 'CHECK_IN'){?>
+
+        <?php }elseif($room_status == 'CHECK_IN'){?>
+
             <option value="READY" >READY</option>
             <option value="CHECK_IN" selected="selected">CHECK_IN</option>
             <option value="CHEK_OUT">CHECK_OUT</option>
-        <?php }elseif ($room_category == 'CHECK_OUT'){?>
+
+        <?php }elseif ($room_status == 'CHECK_OUT'){?>
+
             <option value="READY" >READY</option>
             <option value="CHECK_IN">CHECK_IN</option>
             <option value="CHEK_OUT" selected="selected">CHECK_OUT</option>
+
         <?php }?>
     </select>
 

@@ -4,8 +4,7 @@
         //Capturar datos de la variable Superglobal $_POST en variables
         $date_in = $_POST['date_in'];
         $date_out = $_POST['date_out'];
-        // echo $date_in;
-        // echo $date_out;
+
 
         //Conexion a la base de datos
         include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
@@ -22,26 +21,7 @@
         );");
         $resultado = mysqli_query($con, $consulta);
 
-        $rooms = mysqli_fetch_all($resultado, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la columna ejemplo:
-        //$mostrar[1]['nombre_columna']
-        //Mostrar informacion de la base de datos
-        // echo $mostrar[0][0];
-        // echo $mostrar[0][1];
-        // echo $mostrar[0][2];
-
-        // foreach($rooms as $room){
-        //     echo '<br>';
-        //     print_r($room['room_category_name']);
-        //     echo '<br>';
-        //     print_r($room['room_category_price']);
-        //     echo '<br>';
-        //     print_r($room['room_category_description']);
-        //     echo '<br>';
-        //     print_r($room['room_category_img']);
-        //     echo '<br>';
-        // }
-        // print_r($mostrar);
-        
+        $rooms = mysqli_fetch_all($resultado, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la 
         mysqli_close($con);
         
     }
