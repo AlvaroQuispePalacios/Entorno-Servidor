@@ -82,8 +82,8 @@
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/reservation/form_reservation_select.php">Select</a></li>
                           <!-- <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Insert</a></li>
-                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_update_call.php">Update</a></li>
                           <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/form_room_delete_call.php">Delete</a></li> -->
+                          <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/reservation/form_reservation_update_call.php">Update</a></li>
                         </ul>
                       </div>
 

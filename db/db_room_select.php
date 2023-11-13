@@ -5,24 +5,30 @@
         $date_in = $_POST['date_in'];
         $date_out = $_POST['date_out'];
 
+        //Comprueba que las fechas no esten vacias(0000-00-00) y que la fecha de entrada sea menor que la fecha de salida
+        if(($date_in != NULL || $date_in != "") && ($date_out != NULL || $date_out !="") && ($date_in < $date_out)){
+            //Conexion a la base de datos
+            include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+                        
+            //Recuerda poner las fechas entre comillas simples porque sin comillas no te funciona el WHERE :,c
+            $consulta = ("SELECT room_id, room_category_name, room_category_price, room_category_description, room_category_img FROM 044_room INNER JOIN 044_room_category ON 044_room.room_category = 044_room_category.room_category_id WHERE 044_room.room_id NOT IN (
+                SELECT 044_reservation.room_id
+                FROM 044_reservation
+                WHERE (
+                    044_reservation.reservation_date_in <= '$date_in' AND 044_reservation.reservation_date_out >= '$date_out'
+                ) OR (
+                    044_reservation.reservation_date_in <= '$date_out' AND 044_reservation.reservation_date_out >= '$date_in'
+                )
+            );");
+    
+            $resultado = mysqli_query($con, $consulta);
+    
+            $rooms = mysqli_fetch_all($resultado, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la 
+            mysqli_close($con);
 
-        //Conexion a la base de datos
-        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
-                    
-        //Recuerda poner las fechas entre comillas simples porque sin comillas no te funciona el WHERE :,c
-        $consulta = ("SELECT room_id, room_category_name, room_category_price, room_category_description, room_category_img FROM 044_room INNER JOIN 044_room_category ON 044_room.room_category = 044_room_category.room_category_id WHERE 044_room.room_id NOT IN (
-            SELECT 044_reservation.room_id
-            FROM 044_reservation
-            WHERE (
-                044_reservation.reservation_date_in <= '$date_in' AND 044_reservation.reservation_date_out >= '$date_out'
-            ) OR (
-                044_reservation.reservation_date_in <= '$date_out' AND 044_reservation.reservation_date_out >= '$date_in'
-            )
-        );");
-        $resultado = mysqli_query($con, $consulta);
-
-        $rooms = mysqli_fetch_all($resultado, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la 
-        mysqli_close($con);
+        }else {
+            header("Location: /student044/dwes/proyectoHotel/forms/form_room_select.php");
+        }
         
     }
 ?>
