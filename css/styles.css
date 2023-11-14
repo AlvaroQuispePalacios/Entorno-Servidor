@@ -54,7 +54,7 @@
     width: 100%;
 }
 
-.index-hotel__img{
+.card-room__img{
     background-image: url(/student044/dwes/proyectoHotel/img/rooms.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -62,11 +62,3 @@
     height: 30rem;
 }
 
-
-/* .card_room_color{
-    background-image: linear-gradient(to right,var(--other), white);
-} */
-
-/* .card_room_text{
-    background-color: #F6F6EF;
-} */
