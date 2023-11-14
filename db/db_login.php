@@ -5,7 +5,7 @@
     if(isset($_POST['submit'])){
 
         $customer_email = $_POST['customer_email'];
-        echo $customer_email;
+        
         $pwd = $_POST['pwd'];
 
         //Conexion a la base de datos

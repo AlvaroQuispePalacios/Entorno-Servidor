@@ -49,7 +49,7 @@
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/index.php">Home</a>
 
                       <!-- CRUD CUSTOMERS -->
-                      <div class="dropdown">
+                      <div class="dropdown ms-1">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Customers
                         </button>
@@ -62,7 +62,7 @@
                       </div>
 
                       <!-- CRUD ROOMS-->
-                      <div class="dropdown">
+                      <div class="dropdown ms-1">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Rooms
                         </button>
@@ -75,7 +75,7 @@
                       </div>
 
                       <!-- CRUD RESERVATION-->
-                      <div class="dropdown">
+                      <div class="dropdown ms-1">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Reservations
                         </button>
@@ -86,12 +86,7 @@
                           <li><a class="dropdown-item" href="/student044/dwes/proyectoHotel/forms/reservation/form_reservation_update_call.php">Update</a></li>
                         </ul>
                       </div>
-
-                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_select.php">Room Select</a>
-                      <a class="nav-link" href="/student044/dwes/proyectoHotel/forms/form_room_insert.php">Room Insert</a>
                       <a class="nav-link" href="/student044/dwes/proyectoHotel/db/db_log_out.php">Log Out</a>
-
-
                     </div> 
 
 
@@ -110,5 +105,3 @@
           
     </header>
     <main>
-
-        
