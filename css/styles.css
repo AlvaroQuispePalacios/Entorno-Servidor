@@ -3,7 +3,7 @@
     --content-color: #F6F6EF;
     --navbar-color: #141414;
     --card-color :hsla(214, 48%, 64%, 0.723);
-    --other: #f46036;
+    --other: rgb(159, 130, 174);
     /* #848C8A
     #80828C 
     F5F7F8*/
@@ -61,3 +61,12 @@
     background-size: cover;
     height: 30rem;
 }
+
+
+/* .card_room_color{
+    background-image: linear-gradient(to right,var(--other), white);
+} */
+
+/* .card_room_text{
+    background-color: #F6F6EF;
+} */
