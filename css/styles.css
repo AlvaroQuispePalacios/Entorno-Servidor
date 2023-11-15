@@ -19,6 +19,8 @@
 }
 
 .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: var(--navbar-color) !important;
 }
 
@@ -59,6 +61,35 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30rem;
+    height: 20rem;
 }
 
+
+@media (min-width: 576px) {
+
+
+}
+
+@media (min-width: 768px) {
+    
+}
+
+
+@media (min-width: 992px) {
+    .carousel-item > img{
+        height: 91vh !important;
+    }
+
+    .card-room__img{
+        height: 30rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
