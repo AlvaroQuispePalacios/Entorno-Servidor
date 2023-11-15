@@ -1,10 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_select_room_id.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_select_room_id.php')?>
 
 
 <h3>Actualizar habitacion</h3>
-<form action="/student044/dwes/proyectoHotel/db/room/db_room_update.php" method="POST">
+<form action="/student044/dwes/db/room/db_room_update.php" method="POST">
     <label for="">Identificador de habitacion:</label>
     <input type="text" value="<?php echo $room_id?>" name="room_id" readonly>
 
@@ -64,4 +64,4 @@
     <input type="submit" name="submit" value="Actualizar">
 </form>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

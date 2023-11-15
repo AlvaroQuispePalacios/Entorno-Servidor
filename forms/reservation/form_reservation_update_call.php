@@ -1,7 +1,7 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <h3>Actualizar Reserva</h3>
-<form action="/student044/dwes/proyectoHotel/forms/reservation/form_reservation_update.php" method="post">
+<form action="/student044/dwes/forms/reservation/form_reservation_update.php" method="post">
     <label for="">Identificar reserva: </label>
     <input type="number" min="1" name="reservation_id">
 
@@ -10,4 +10,4 @@
 
 
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

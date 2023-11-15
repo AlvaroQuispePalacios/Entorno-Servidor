@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <?php
     if(isset($_POST['submit'])){
@@ -13,7 +13,7 @@
             
 
             //Conexion a la base de datos
-            include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+            include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
             
             $sql = "INSERT INTO 044_reservation (reservation_id, customer_id, room_id, reservation_date_in, reservation_date_out, reservation_price, reservation_status)
             VALUES
@@ -29,10 +29,10 @@
             }
             mysqli_close($con);
         }else {
-            header("Location: /student044/dwes/proyectoHotel/forms/form_login.php");
+            header("Location: /student044/dwes/forms/form_login.php");
         }
 
     }
 ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

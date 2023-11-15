@@ -1,6 +1,6 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_select_reservation_id.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_select_reservation_id.php')?>
 
 <h2>Actualizar Reservas</h2>
 <form action="/student044/dwes/proyectoHote/db/reservation/db_reservation_update.php" method="post">
@@ -78,4 +78,4 @@
 
 </form>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

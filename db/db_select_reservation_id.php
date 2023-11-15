@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['submit'])){
         //Conexion a la base de datos
-        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
 
         $reservation_id = $_POST['reservation_id'];
         

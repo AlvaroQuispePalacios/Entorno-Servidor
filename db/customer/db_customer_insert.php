@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <?php
     if(isset($_POST['submit'])){
@@ -9,7 +9,7 @@
         $customer_email = $_POST['customer_email'];
 
         //Conexion a la base de datos
-        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
                     
         //
         $sql = "INSERT INTO 044_customer (customer_id, customer_name, customer_surname, customer_phone, customer_email) VALUES 
@@ -27,4 +27,4 @@
     }
 ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

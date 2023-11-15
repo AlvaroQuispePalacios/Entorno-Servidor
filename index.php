@@ -1,6 +1,6 @@
 <!DOCTYPE html5>
 <html lang="es">
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/proyectoHotel/header.php') ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
 
 <!-- SLIDER -->
 <div id="carouselExampleCaptions" class="carousel slide">
@@ -55,6 +55,6 @@
     </div>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/proyectoHotel/footer.php') ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
 
 </html>

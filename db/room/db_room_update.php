@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <?php
     if(isset($_POST['submit'])){
@@ -8,7 +8,7 @@
         $room_status = $_POST['room_status'];
 
         //Conexion a la base de datos
-        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
 
         $sql = "UPDATE 044_room SET room_category = '$room_category', room_status = '$room_status' WHERE room_id = $room_id";
         $query =mysqli_query($con, $sql);
@@ -20,4 +20,4 @@
     }
 ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

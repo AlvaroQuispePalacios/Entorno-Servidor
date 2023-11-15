@@ -1,7 +1,7 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <h3>Crear a un cliente</h3>
-<form action="/student044/dwes/proyectoHotel/db/customer/db_customer_insert.php" method="POST">
+<form action="/student044/dwes/db/customer/db_customer_insert.php" method="POST">
     <label for="">Nombre: </label>
     <input type="text" name="customer_name">
     <br>
@@ -17,4 +17,4 @@
     <input type="submit" name="submit" value="Crear cliente">
 </form>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

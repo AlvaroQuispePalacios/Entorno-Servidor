@@ -1,11 +1,11 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <!-- Acuerdate de separar este codigo en otro db_select_customer.php -->
 <?php
     if(isset($_POST['submit'])){
 
         //Conexion a la base de datos
-        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
                     
         //Buscar infomacion(SELECT)
         $sql = ("SELECT * FROM 044_customer");
@@ -63,4 +63,4 @@
     </table>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

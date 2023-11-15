@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 <?php
     if(isset($_POST['submit'])){
         //Capturar datos de la variable Superglobal $_POST en variables
@@ -8,7 +8,7 @@
         //Comprueba que las fechas no esten vacias(0000-00-00) y que la fecha de entrada sea menor que la fecha de salida
         if(($date_in != NULL || $date_in != "") && ($date_out != NULL || $date_out !="") && ($date_in < $date_out)){
             //Conexion a la base de datos
-            include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+            include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
                         
             //Recuerda poner las fechas entre comillas simples porque sin comillas no te funciona el WHERE :,c
             $consulta = ("SELECT room_id, room_category_name, room_category_price, room_category_description, room_category_img FROM 044_room INNER JOIN 044_room_category ON 044_room.room_category = 044_room_category.room_category_id WHERE 044_room.room_id NOT IN (
@@ -27,7 +27,7 @@
             mysqli_close($con);
 
         }else {
-            header("Location: /student044/dwes/proyectoHotel/forms/form_room_select.php");
+            header("Location: /student044/dwes/forms/form_room_select.php");
         }
         
     }
@@ -51,7 +51,7 @@
             <div class="card-body p-3 pt-1">
                 <p class="card-text"><?php print_r($room['room_category_description'])?></p>
                 <div class="text-end">
-                    <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/miniForms/mini_form_reservation_insert.php')?>
+                    <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/miniForms/mini_form_reservation_insert.php')?>
                 </div>
             </div>
         </div>
@@ -61,4 +61,4 @@
     ?>
 </section>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

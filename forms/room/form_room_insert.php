@@ -1,6 +1,6 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
-<form action="/student044/dwes/proyectoHotel/db/room/db_room_insert.php" method="POST">
+<form action="/student044/dwes/db/room/db_room_insert.php" method="POST">
     <label for="">Categoria de la habitacion</label>
     <select name="room_category">
         <option value="1">Single</option>
@@ -11,4 +11,4 @@
     <input type="submit" name="submit" value="Insertar habitacion">
 </form>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

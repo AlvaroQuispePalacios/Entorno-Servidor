@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <div class=" d-flex justify-content-center align-items-center p-3 pt-0">
 
@@ -6,7 +6,7 @@
 
         <article class="login-card-background-img d-flex justify-content-center align-items-center">
             
-            <img class="img-fluid login-card-img rounded-circle p-3" src="/student044/dwes/proyectoHotel/img/LogoHotel.jpg">
+            <img class="img-fluid login-card-img rounded-circle p-3" src="/student044/dwes/img/LogoHotel.jpg">
             
         </article>
 
@@ -14,7 +14,7 @@
 
             <h2 class="login-card-title">Login</h2>
 
-            <form action="/student044/dwes/proyectoHotel/db/db_login.php" method="POST">
+            <form action="/student044/dwes/db/db_login.php" method="POST">
                 
                 <!-- Email -->
                 <div class="form-floating mb-3" >
@@ -40,4 +40,4 @@
 
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

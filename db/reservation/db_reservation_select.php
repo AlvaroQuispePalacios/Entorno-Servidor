@@ -1,9 +1,9 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
 <?php
     if(isset($_POST['submit'])){
         //Conexion a la base de datos
-        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
 
         $sql = "SELECT * FROM 044_reservation";
         $query = mysqli_query($con, $sql);
@@ -58,4 +58,4 @@
 </table>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

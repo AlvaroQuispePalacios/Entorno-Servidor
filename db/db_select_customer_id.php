@@ -6,7 +6,7 @@
         $customer_id = $_POST['customer_id'];
 
         //Conexion a la base de datos
-        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/proyectoHotel/db/db_connect.php');
+        include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
 
         //Query que obtendra los datos 
         $sql = "SELECT * FROM 044_customer WHERE customer_id = $customer_id";
