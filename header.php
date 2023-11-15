@@ -13,7 +13,7 @@
     
     <link rel="stylesheet" href="/student044/dwes/css/styles.css">
 
-    <title>Ducks</title>
+    <title>Ducks Hotel</title>
 </head>
 <body>
     <header>

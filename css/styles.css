@@ -1,17 +1,23 @@
 :root{
     --body-color: #fff9fb;
-    --content-color: #F6F6EF;
+    /* --content-color: #F6F6EF; */
+    --content-color: #9592C8;
     --navbar-color: #141414;
     --card-color :hsla(214, 48%, 64%, 0.723);
     --other: rgb(159, 130, 174);
-    /* #848C8A
-    #80828C 
-    F5F7F8*/
+    /* 
+     141414
+     F6F6EF
+     AFAED6
+    */
     
 }
 
 /*--------------------------- Navbar -------------------------------*/
 
+body{
+    background-color: #fff;
+}
 .logo{
     padding: 5px;
     width: 70px;
@@ -28,6 +34,16 @@
 .login-card-content{
     background-color: var(--content-color);
     padding: 2.5rem;
+}
+
+.btn-primary{
+    border: 0;
+    background-color: #141414;
+}
+
+.btn-primary:hover{
+    color: black;
+    background-color: #F6F6EF;
 }
 
 .login-card-background-img{
