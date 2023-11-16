@@ -24,6 +24,7 @@
             
             if ($query){
                 echo "Habitacion Reservada";
+                //(Agregar) Aqui estara los datos del usuario, la habitacion, reserva, y tambien estara el precio total de la reserva
             }else{
                 echo "Error al reservar";
             }
