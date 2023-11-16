@@ -1,6 +1,6 @@
 <?php
     //Datos para entrar en la base de datos
-    $user = "dwes1234";
+    $user = "dwess1234";
     $password = "test1234.";
     $server = "remotehost.es";
     $database = "dwesdatabase";
