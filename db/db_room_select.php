@@ -27,7 +27,7 @@
             mysqli_close($con);
 
         }else {
-            header("Location: /student044/dwes/forms/form_room_select.php");
+            header("Location: /student044/dwes/forms/room/form_room_select.php");
         }
         
     }

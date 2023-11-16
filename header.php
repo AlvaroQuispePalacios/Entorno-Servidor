@@ -37,7 +37,7 @@
 
                     <div class="navbar-nav ms-lg-auto">
                       <a class="nav-link" href="/student044/dwes/index.php">Home</a>
-                      <a class="nav-link" href="/student044/dwes/forms/form_room_select.php">Habitaciones</a>
+                      <a class="nav-link" href="/student044/dwes/forms/room/form_room_select.php">Habitaciones</a>
                       <a class="nav-link" href="/student044/dwes/db/db_log_out.php">Log Out</a>
                     </div>
 
@@ -67,7 +67,7 @@
                           Rooms
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="/student044/dwes/forms/form_room_select.php">Select</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/forms/room/form_room_select.php">Select</a></li>
                           <li><a class="dropdown-item" href="/student044/dwes/forms/room/form_room_insert.php">Insert</a></li>
                           <li><a class="dropdown-item" href="/student044/dwes/forms/room/form_room_update_call.php">Update</a></li>
                           <li><a class="dropdown-item" href="/student044/dwes/forms/room/form_room_delete_call.php">Delete</a></li>
@@ -94,7 +94,7 @@
 
                       <div class="navbar-nav ms-lg-auto">
                         <a class="nav-link" href="/student044/dwes/index.php">Home</a>
-                        <a class="nav-link" href="/student044/dwes/forms/form_room_select.php">Habitaciones</a>
+                        <a class="nav-link" href="/student044/dwes/forms/room/form_room_select.php">Habitaciones</a>
                         <a class="nav-link" href="/student044/dwes/forms/form_login.php">Login</a>
                       </div>
 
