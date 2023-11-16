@@ -36,8 +36,9 @@
                   if($user_rol == 'customer'){ ?>
 
                     <div class="navbar-nav ms-lg-auto">
-                      <a class="nav-link" href="/student044/dwes/index.php">Home</a>
+                      <a class="nav-link" href="/student044/dwes/index.php">Inicio</a>
                       <a class="nav-link" href="/student044/dwes/forms/room/form_room_select.php">Habitaciones</a>
+                      <a class="nav-link" href="#">Reservas</a>
                       <a class="nav-link" href="/student044/dwes/db/db_log_out.php">Log Out</a>
                     </div>
 
@@ -46,7 +47,7 @@
                 <?php } elseif($user_rol == 'admin') { ;?>
 
                     <div class="navbar-nav ms-lg-auto">
-                      <a class="nav-link" href="/student044/dwes/index.php">Home</a>
+                      <a class="nav-link" href="/student044/dwes/index.php">Inicio</a>
 
                       <!-- CRUD CUSTOMERS -->
                       <div class="dropdown ms-1">
@@ -93,9 +94,10 @@
                 <?php } else {?>
 
                       <div class="navbar-nav ms-lg-auto">
-                        <a class="nav-link" href="/student044/dwes/index.php">Home</a>
+                        <a class="nav-link" href="/student044/dwes/index.php">Inicio</a>
                         <a class="nav-link" href="/student044/dwes/forms/room/form_room_select.php">Habitaciones</a>
                         <a class="nav-link" href="/student044/dwes/forms/form_login.php">Login</a>
+                        <a class="nav-link" href="#">Register</a>
                       </div>
 
                 <?php }?>
