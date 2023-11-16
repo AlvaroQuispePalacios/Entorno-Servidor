@@ -81,9 +81,9 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="/student044/dwes/forms/reservation/form_reservation_select.php">Select</a></li>
-                          <!-- <li><a class="dropdown-item" href="/student044/dwes/forms/form_room_insert.php">Insert</a></li>
-                          <li><a class="dropdown-item" href="/student044/dwes/forms/form_room_delete_call.php">Delete</a></li> -->
+                          <!-- <li><a class="dropdown-item" href="/student044/dwes/forms/form_room_insert.php">Insert</a></li>-->
                           <li><a class="dropdown-item" href="/student044/dwes/forms/reservation/form_reservation_update_call.php">Update</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/forms/reservation/form_reservation_delete_call.php">Delete</a></li>
                         </ul>
                       </div>
                       <a class="nav-link" href="/student044/dwes/db/db_log_out.php">Log Out</a>
