@@ -13,7 +13,16 @@
 
         $resultado = mysqli_query($con, $sql);
         
-        
+        // PRINCIPAL
+        /*
+            -Añadir extras.
+            -Añadir que se puedan añador imagenes (Administrador podria subir imagenes de la habitacion)
+        */
+        /* SECUNDARIO
+            -RECUERDA: Vas a agregar la columna customer_status(enabled, disabled)--> Con esto el delete sera pasar el estado de enabled a disabled y no hacer un delete
+            
+            -RECUERDA: Que un usuario con la el estado "disabled" no puede reservar habitaciones, Si quiere activar su un administrador tiene que hacerlo manualmente(AGREGA UNA CONDICION )
+        */
         if($resultado){
             echo "El cliente ha sido eliminado";
         }else{

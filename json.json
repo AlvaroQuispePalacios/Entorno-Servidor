@@ -1,0 +1,97 @@
+/* CONDICIONES
+    - Numero de ticket(Generar no se como ¿?)
+    - Nombre de extra(EJM: var, spa, etc)
+    - Poder agregar nuevos extras(bar, spa, restaurante, etc) aparte de las existentes(administrador)
+    - Poder agregar consumos a los extras
+    - Sacar el precio total de ticket
+    - Si se puede agregar fecha y hora del consumo
+
+
+
+    -Cuando inserte debo ingresar insertar tambien la fecha y hora al ticket(El campo date del ticket se inserta mediante php )
+*/
+
+
+// Acceder: extras[0].restaurante[0].nTikectN
+
+{
+    "extras":
+    [
+
+        {
+            "restaurante": [
+
+                {
+                    "nTicket1":
+                    [
+                        {
+                            "name": "comida1",
+                            "price": 0,
+                            "date": "fecha1"
+                        },
+
+                        {
+                            "name": "comida2",
+                            "price": 0,
+                            "date": "fecha2"
+                        }
+                    ]
+                },
+
+                {
+                    "nTicket2":
+                    [
+                        {
+                            "name": "rest1",
+                            "price": 0,
+                            "date": "fecha1"
+                        }
+                    ]
+                },
+
+                {
+                    "nTicket3":
+                    [
+                        {
+                            "name": "rest1",
+                            "price": 0,
+                            "date": "fecha1"
+                        }
+                    ]
+                }
+
+            ]
+        },
+
+        {
+            "bar": [
+
+                {
+                    "nTicket1":
+                    [
+                        {
+                            "name": "bar1",
+                            "price": 0
+                        }
+                    ]
+                },
+
+                {
+                    "nTicket2":
+                    [
+                        {
+                            "name": "bar1",
+                            "price": 0
+                        }
+                    ]
+                }
+
+            ]
+        }
+
+    ]
+
+}
+
+
+
