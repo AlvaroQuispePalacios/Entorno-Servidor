@@ -16,7 +16,7 @@
         // PRINCIPAL
         /*
             -Añadir extras.
-            -Añadir que se puedan añador imagenes (Administrador podria subir imagenes de la habitacion)
+            -Añadir que se puedan subir  imagenes (Administrador podria subir imagenes de la habitacion) Para hacert esto necesito ver las diferente categorias hacer(SELECT, INSERT, UPDATE, DELETE; cuando haga insert de las habitaciones que el administrador pueda subir imagenes de la nueva categoria)
         */
         /* SECUNDARIO
             -RECUERDA: Vas a agregar la columna customer_status(enabled, disabled)--> Con esto el delete sera pasar el estado de enabled a disabled y no hacer un delete

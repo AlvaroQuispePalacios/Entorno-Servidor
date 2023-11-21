@@ -87,8 +87,24 @@
                           <li><a class="dropdown-item" href="/student044/dwes/forms/reservation/form_reservation_delete_call.php">Delete</a></li>
                         </ul>
                       </div>
+
+                      <!-- CRUD ROOM CATEGORY-->
+                      <div class="dropdown ms-1">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Room Category
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/student044/dwes/db/room_category/db_room_category_select.php">Select</a></li>
+                          <li><a class="dropdown-item" href="/student044/dwes/forms/room_category/form_room_category_insert.php">Insert</a></li>
+                          <li><a class="dropdown-item" href="#">Update</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+
                       <a class="nav-link" href="/student044/dwes/db/db_log_out.php">Log Out</a>
                     </div> 
+
+                    
 
 
                 <?php } else {?>

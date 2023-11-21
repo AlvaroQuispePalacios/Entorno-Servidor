@@ -109,3 +109,9 @@ body{
 @media (min-width: 1400px) {
 
 }
+
+table, tr, td, th{
+    text-align: center;
+    border: 1px solid black;
+    padding: .5rem;
+}
