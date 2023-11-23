@@ -11,9 +11,9 @@
     <input type="text" name="room_category_description">
     <br>
     <label for="">Imagen de la habitacion: </label>
-    <input type="file" name="room_category_img">
+    <input type="file" name="file"> 
     <br>
-    <input type="submit" value="Crear categoria">
+    <input type="submit" name="submit" value="Crear categoria">
 </form>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>
