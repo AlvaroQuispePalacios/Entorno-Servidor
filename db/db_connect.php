@@ -1,9 +1,9 @@
 <?php
     //Datos para entrar en la base de datos
-    $user = "dwess1234";
-    $password = "test1234.";
-    $server = "remotehost.es";
-    $database = "dwesdatabase";
+    $user = "root";
+    $password = "";
+    $server = "localhost";
+    $database = "hotel";
 
     //Conexion a la base de datos
     $con = mysqli_connect($server, $user, $password, $database);

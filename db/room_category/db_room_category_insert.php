@@ -37,7 +37,7 @@
             }
         }
 
-        //Conexion a la base de datos
+        // Conexion a la base de datos
         // include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
 
         // $sql = "INSERT INTO 044_room_category
