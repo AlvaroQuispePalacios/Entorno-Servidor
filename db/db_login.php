@@ -24,6 +24,9 @@
 
         $_SESSION['user_rol'] = $mostrar[0]['customer_rol'];
 
+        $_SESSION['user_img'] = $mostrar[0]['customer_img'];
+        
+
         mysqli_close($con);
         header("Location: /student044/dwes/index.php");
     }

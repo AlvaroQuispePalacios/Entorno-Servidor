@@ -28,6 +28,7 @@
             <th>Customer Email</th>
             <th>Customer Password</th>
             <th>Customer Rol</th>
+            <th>Customer Image</th>
         </tr>
     
         <?php
@@ -54,6 +55,9 @@
                 </td>
                 <td>
                     <?php print_r($customer['customer_rol']);?>
+                </td>
+                <td>
+                    <img src="<?php print_r($customer['customer_img']);?>" alt="img_user" width="150px">
                 </td>
             </tr>
             

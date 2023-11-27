@@ -23,7 +23,20 @@
     <label for="">Email: </label>
     <input type="text" name="customer_email" value="<?php echo $customer_email?>">
     <br>
+    <label for="">Contraseña: </label>
+    <input type="text" name="customer_password" value="<?php echo $customer_password?>">
+    <br>
+    <select name="customer_rol">
+        <?php if($customer_rol == 'customer') {?>
+            <option value="customer" selected="selected">Customer</option>
+            <option value="admin">Admin</option>
+        <?php } elseif($customer_rol == 'admin') {?>
+            <option value="customer">Customer</option>
+            <option value="admin" selected="selected">Admin</option>
+        <?php }?>
+    </select>
     <input type="submit" name="submit" value="Actualizar">
 </form>
+
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

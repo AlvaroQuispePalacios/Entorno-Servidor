@@ -33,7 +33,7 @@
             <option value="3" >Triple</option>
             <option value="4" selected="selected">Suite</option>
         <?php }?>
-        </select>
+    </select>
     
     <br>
 

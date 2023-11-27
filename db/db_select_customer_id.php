@@ -20,7 +20,9 @@
         $customer_surname = $mostrar[0]['customer_surname']; 
         $customer_phone = $mostrar[0]['customer_phone']; 
         $customer_email = $mostrar[0]['customer_email']; 
-
+        $customer_password = $mostrar[0]['customer_password']; 
+        $customer_rol = $mostrar[0]['customer_rol']; 
+        
         mysqli_close($con);
 
     }

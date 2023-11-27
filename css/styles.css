@@ -115,3 +115,23 @@ table, tr, td, th{
     border: 1px solid black;
     padding: .5rem;
 }
+
+.user{
+    padding: .5rem;
+    border-radius: 5px;
+    margin: 0 .5rem;
+    background-color: #9592C8;
+}
+
+.user .contenedor{
+    margin-right: .5rem;
+}
+
+.user__img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.user__text span{
+    color: white;
+}
