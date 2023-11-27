@@ -30,6 +30,7 @@ body{
     background-color: var(--navbar-color) !important;
 }
 
+
 /*--------------------------- Login -------------------------------*/
 .login-card-content{
     background-color: var(--content-color);
@@ -81,16 +82,6 @@ body{
 }
 
 
-@media (min-width: 576px) {
-
-
-}
-
-@media (min-width: 768px) {
-    
-}
-
-
 @media (min-width: 992px) {
     .carousel-item > img{
         height: 91vh !important;
@@ -102,36 +93,99 @@ body{
 }
 
 
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1400px) {
-
-}
-
 table, tr, td, th{
     text-align: center;
     border: 1px solid black;
     padding: .5rem;
 }
 
-.user{
-    padding: .5rem;
-    border-radius: 5px;
-    margin: 0 .5rem;
-    background-color: #9592C8;
+label{
+    display: block;
+    width: 100%;
+}
+.btn-user{
+    /* background-color: #9592C8; */
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    padding: .4rem;
 }
 
-.user .contenedor{
-    margin-right: .5rem;
-}
-
-.user__img{
+.btn-user__img{
     border-radius: 50%;
-    width: 30px;
+    width: 1.5rem;
 }
 
-.user__text span{
+.btn-user:hover{
+    background-color: #141414;
     color: white;
+
 }
+
+.btn-user:focus{
+    background-color: #141414;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+/*
+.contenedor-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form{
+    padding: 2rem;
+
+}
+
+.form__date{
+    display: flex;
+    gap: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+
+.date{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+.date label{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input[type='date']{
+    background-color: #F6F6EF;
+    color: black;
+    padding: 1rem;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: #9592C8;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit input[type='submit']{
+    width: 50%;
+}
+*/

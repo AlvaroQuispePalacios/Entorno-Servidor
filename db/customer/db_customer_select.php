@@ -2,8 +2,6 @@
 
 <!-- Acuerdate de separar este codigo en otro db_select_customer.php -->
 <?php
-    if(isset($_POST['submit'])){
-
         //Conexion a la base de datos
         include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
                     
@@ -14,7 +12,6 @@
         $customers = mysqli_fetch_all($query, MYSQLI_ASSOC);//Utilizando MYSQLI_ASSOC se puede utilizar para el nombre de la columna ejemplo:
 
         mysqli_close($con);
-    }
 ?>
 
 <div class="d-flex justify-content-center align-items-center">

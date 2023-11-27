@@ -1,26 +1,30 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_select_customer_id.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/db/db_select_customer_id.php') ?>
 
 <h2>Eliminar un cliente</h2>
-<form action="/student044/dwes/db/customer/db_customer_delete.php" method="POST">
-    <h4>Datos del cliente</h4>
-    <label for="">Identificador: </label>
-    <input type="text" name="customer_id" readonly value="<?php echo $customer_id?>">
-    <br>
-    <label for="">Nombre: </label>
-    <input type="text"  readonly value="<?php echo $customer_name?>">
-    <br>
-    <label for="">Apellido: </label>
-    <input type="text" readonly value="<?php echo $customer_surname?>">
-    <br>
-    <label for="">Telefono: </label>
-    <input type="text"  readonly value="<?php echo $customer_phone?>">
-    <br>
-    <label for="">Email: </label>
-    <input type="text"  readonly value="<?php echo $customer_email?>">
-    <br>
-    <input type="submit" name="submit" value="Eliminar permanentemente">
-</form>
+<div class="contenedor-form">
+    <div class="form">
+        <form action="/student044/dwes/db/customer/db_customer_delete.php" method="POST">
+            <h4>Datos del cliente</h4>
+            <label for="">Identificador: </label>
+            <input type="text" name="customer_id" readonly value="<?php echo $customer_id ?>">
+    
+            <label for="">Nombre: </label>
+            <input type="text" readonly value="<?php echo $customer_name ?>">
+    
+            <label for="">Apellido: </label>
+            <input type="text" readonly value="<?php echo $customer_surname ?>">
+    
+            <label for="">Telefono: </label>
+            <input type="text" readonly value="<?php echo $customer_phone ?>">
+    
+            <label for="">Email: </label>
+            <input type="text" readonly value="<?php echo $customer_email ?>">
+    
+            <input type="submit" name="submit" value="Eliminar permanentemente">
+        </form>
+    </div>
+</div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
