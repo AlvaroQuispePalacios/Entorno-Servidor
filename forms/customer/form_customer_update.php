@@ -8,7 +8,7 @@
 <h3>Actualizar datos del cliente</h3>
 <div class="contenedor-form">
     <div class="form">
-        <form action="/student044/dwes/db/customer/db_customer_update.php" method="POST">
+        <form action="/student044/dwes/db/customer/db_customer_update.php" method="POST"  enctype="multipart/form-data">
             <label for="">Identificador: </label>
             <input type="text" name="customer_id" readonly value="<?php echo $customer_id?>">
             
@@ -27,6 +27,7 @@
             <label for="">Contraseña: </label>
             <input type="text" name="customer_password" value="<?php echo $customer_password?>">
             
+            <label for="">Rol: </label>
             <select name="customer_rol">
                 <?php if($customer_rol == 'customer') {?>
                     <option value="customer" selected="selected">Customer</option>
@@ -36,6 +37,9 @@
                     <option value="admin" selected="selected">Admin</option>
                 <?php }?>
             </select>
+            <!-- Con javaScript puedes mostrar una previsualisacion de la imagen(RECUERDA HACERLO) -->
+            <label for="">Image: </label>
+            <input type="file" name="file"> 
             <input type="submit" name="submit" value="Actualizar">
         </form>
 

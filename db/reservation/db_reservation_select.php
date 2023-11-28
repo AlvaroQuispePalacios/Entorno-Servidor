@@ -20,6 +20,8 @@
         <th>Date out</th>
         <th>Reservation Price</th>
         <th>Reservation Status</th>
+        <th>Reservation Extras</th>
+        <th>Actions</th>
     </tr>
 
     <?php
@@ -46,6 +48,12 @@
             </td>
             <td>
                 <?php print_r($reservation['reservation_status']);?>
+            </td>
+            <td>
+                <?php print_r($reservation['reservation_extras'])?>
+            </td>
+            <td>
+                <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/miniForms/mini_form_reservation_update.php');?>
             </td>
         </tr>
         

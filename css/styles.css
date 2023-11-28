@@ -95,7 +95,7 @@ body{
 
 table, tr, td, th{
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.357);
     padding: .5rem;
 }
 
@@ -112,7 +112,7 @@ label{
 
 .btn-user__img{
     border-radius: 50%;
-    width: 1.5rem;
+    width: 2rem;
 }
 
 .btn-user:hover{

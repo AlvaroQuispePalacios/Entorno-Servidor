@@ -21,8 +21,9 @@
         $customer_phone = $mostrar[0]['customer_phone']; 
         $customer_email = $mostrar[0]['customer_email']; 
         $customer_password = $mostrar[0]['customer_password']; 
-        $customer_rol = $mostrar[0]['customer_rol']; 
-        
+        $customer_rol = $mostrar[0]['customer_rol'];
+        // RECUERDA PONERLO DESPUES CON JAVASCRIPT PARA QUE HAYA UNA PREVISUALIZACION CON JAVASCRIPT
+        // $customer_img = $mostrar[0]['customer_img'];
         mysqli_close($con);
 
     }

@@ -1,5 +1,4 @@
-<!DOCTYPE html5>
-<html lang="es">
+
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
 
 <!-- SLIDER -->
@@ -56,5 +55,3 @@
 </div>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
-
-</html>
