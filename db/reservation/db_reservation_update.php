@@ -10,6 +10,7 @@
         $reservation_date_out = $_POST['reservation_date_out'];
         $reservation_price = $_POST['reservation_price'];
         $reservation_status = $_POST['reservation_status'];
+        echo "<br>".$reservation_status."<br>";
 
         $sql = "UPDATE 044_reservation SET customer_id = '$customer_id', room_id = '$room_id', reservation_date_in = '$reservation_date_in', reservation_date_out = '$reservation_date_out', reservation_price = '$reservation_price', reservation_status = '$reservation_status' WHERE reservation_id = $reservation_id";
 
