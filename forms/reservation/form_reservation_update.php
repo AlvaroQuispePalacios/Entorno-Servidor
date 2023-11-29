@@ -10,18 +10,12 @@
         <form action="/student044/dwes/db/reservation/db_reservation_update.php" method="post">
             <label for="">Reserva ID: </label>
             <input type="text" value="<?php echo $reservation_id;?>" readonly name="reservation_id">
-            
-            
         
             <label for="">Cliente ID: </label>
             <input type="text" value="<?php echo $customer_id;?>" name="customer_id">
         
-            
-        
             <label for="">Habitacion ID: </label>
             <input type="text" value="<?php echo $room_id;?>" name="room_id">
-        
-            
         
             <!--RECUERDA una habitacion puede tener mas de una reserva  
                 
@@ -30,17 +24,11 @@
             <label for="">Fecha entrada: </label>
             <input type="date" value="<?php echo $reservation_date_in?>" name="reservation_date_in"">
         
-            
-        
             <label for="">Fecha salida: </label>
             <input type="date" value="<?php echo $reservation_date_out?>" name="reservation_date_out"">
         
-            
-        
             <label for="">Precio por noche: </label>
             <input type="text" value="<?php echo $reservation_price;?>" name="reservation_price">
-        
-            
         
             <label for="">Status de la habitacion</label>
             <select name="reservation_status">
