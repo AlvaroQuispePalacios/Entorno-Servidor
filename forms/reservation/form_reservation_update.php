@@ -3,10 +3,11 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_select_reservation_id.php')?>
 
 <h2>Actualizar Reservas</h2>
+
 <div class="contenedor-form">
     <div class="form">
 
-        <form action="/student044/dwes/proyectoHote/db/reservation/db_reservation_update.php" method="post">
+        <form action="/student044/dwes/db/reservation/db_reservation_update.php" method="post">
             <label for="">Reserva ID: </label>
             <input type="text" value="<?php echo $reservation_id;?>" readonly name="reservation_id">
             

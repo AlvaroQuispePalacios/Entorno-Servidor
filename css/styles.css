@@ -43,8 +43,8 @@ body{
 }
 
 .btn-primary:hover{
-    color: black;
-    background-color: #F6F6EF;
+    /* color: black; */
+    background-color: rgba(20, 20, 20, 0.889);
 }
 
 .login-card-background-img{
