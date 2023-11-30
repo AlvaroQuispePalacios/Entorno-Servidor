@@ -52,7 +52,27 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
             <td>
                 <?php
-                $extras = json_decode($reservation['reservation_extras'], true);
+                $json = json_decode($reservation['reservation_extras'], true);
+                ?>
+
+                <?php if ($json === null) {
+                    echo "Servicios no encontrados";
+                } else {
+                    
+                    $extras = array_keys($json);
+                    foreach ($extras as $extra) {
+                        echo '<br>' . $extra;
+                        // Esta variable donde se guardan el array de los servicios como por ejemplo guardaran el array que esta dentro de restaurante, luego el de bar, etc.
+                        $service = $json[$extra];
+                        for ($i = 0; $i < sizeof($service); $i++) {
+                            echo "<br>";
+                            print_r($service[$i]['date']);
+                            echo "<br>";
+                            print_r($service[$i]['price']);
+                            echo "€<br>";
+                        }
+                    }
+                }
                 ?>
 
             </td>
