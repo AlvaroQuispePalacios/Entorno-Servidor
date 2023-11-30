@@ -21,7 +21,7 @@ $user_img = $_SESSION['user_img'] ?? "";
 <body>
   <header>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark">
-      <div class="container">
+      <div class="container-fluid px-5">
         <a class="navbar-brand p-0" href="/student044/dwes/index.php">
           <img class="logo img-fluid rounded-5 p-0" src="/student044/dwes/img/LogoHotelSinFondo.png" alt="Logo">
           <h5 class="text-warning font-monospace m-0 d-inline">

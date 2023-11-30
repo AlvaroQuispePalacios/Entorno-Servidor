@@ -94,15 +94,14 @@ tr,
 td,
 th {
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.357);
+  border: 1px solid rgba(0, 0, 0, 0.145);
   padding: 0.5rem;
 }
 
-label {
-  display: block;
-  font-size: 20px;
-  width: 100%;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
+
 .btn-user {
   /* background-color: #9592C8; */
   background-color: transparent;
@@ -127,49 +126,15 @@ label {
   outline: 0;
 }
 
-.containerMyModal {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #1414142a;
-  z-index: 1021;
+.bg-dark{
+  background-color: #141414 !important;
 }
 
-.myModal {
-  /* display: none; */
-  position: relative;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
+.nav-pills li a:hover{
   background-color: #9592c8;
-  width: 30rem;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
 }
 
-.myModalTitle {
-  display: flex;
-  text-align: start;
-}
 
-.myModalClose {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-  align-items: center;
-}
-
-.myModalBody {
-  display: flex;
-  text-align: start;
-  justify-content: start;
-}
-
-.myModalFooter {
-  text-align: end;
-}
 /*
 .contenedor-form{
     display: flex;
