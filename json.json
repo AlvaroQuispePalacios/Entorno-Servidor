@@ -1,12 +1,14 @@
 {
     
     "restaurante": [
-        {
+        {   
+            "name": "res1",
             "date": "2023-11-17",
             "price": 10
         },
 
         {
+            "name": "res2",
             "date": "2023-11-22",
             "price": 19.2
         }
@@ -16,10 +18,12 @@
   
     "bar": [
         {
+            "name": "bar1",
             "date": "2023-11-22",
             "price": 75.99
         },
         {
+            "name": "bar2",
             "date": "2023-11-27",
             "price": 3
         }

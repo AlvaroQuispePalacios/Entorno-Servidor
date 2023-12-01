@@ -53,6 +53,9 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
             <td>
                 <?php
                 $json = json_decode($reservation['reservation_extras'], true);
+                $total_bar = 0;
+                $total_restaurante = 0;
+                $total_extras = 0;
                 ?>
 
                 <?php if ($json === null) {
@@ -66,15 +69,23 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         $service = $json[$extra];
                         for ($i = 0; $i < sizeof($service); $i++) {
                             echo "<br>";
+                            print_r($service[$i]['name']);
+                            echo "<br>";
                             print_r($service[$i]['date']);
                             echo "<br>";
                             print_r($service[$i]['price']);
                             echo "€<br>";
+                            $total_extras += $service[$i]['price'];
                         }
                     }
+                    echo "<br>".$total_extras;
                 }
                 ?>
-
+                <!-- Insertar servicio  -->
+                <form action="/student044/dwes/forms/reservation/form_reservation_extra_insert.php" method="POST">
+                    <input type="text" name="reservation_id" value="<?php print_r($reservation['reservation_id'])?>" hidden>
+                    <input type="submit" name="submit" value="Agregar Extra">
+                </form>
             </td>
 
             <td>

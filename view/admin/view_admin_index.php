@@ -1,3 +1,4 @@
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/view/admin/view_admin_header.php')?>
 
 
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vero qui veniam, aut enim officiis libero optio ea, ipsam laborum non blanditiis, mollitia asperiores deserunt! Laudantium dolores facere quidem asperiores!
@@ -31,3 +32,4 @@ Consequuntur optio ex maxime cum dolore, unde rerum eius iste exercitationem qua
 Ullam voluptatem, ipsa reprehenderit adipisci possimus dolor dolore magnam distinctio earum reiciendis voluptates debitis eos ipsum, iste delectus cum. Nulla mollitia beatae ipsam, dolore tempora rem nobis nihil consequuntur necessitatibus.
 At mollitia vitae, sint minus perferendis illum? Iusto quas deserunt, voluptates modi architecto, rerum impedit, suscipit eligendi dolores sint enim porro? Fugiat cupiditate voluptates doloribus sapiente, nobis ducimus consequuntur aliquam.
 Culpa adipisci, deserunt voluptas voluptates fugiat, voluptatum praesentium architecto sit quam cupiditate totam repellendus dolorem esse nemo odio commodi explicabo ipsam. Obcaecati ipsa quidem unde saepe. Incidunt similique ad dicta.</p>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/view/admin/view_admin_footer.php')?>
