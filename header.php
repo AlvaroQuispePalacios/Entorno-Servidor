@@ -5,7 +5,7 @@ $user_id = $_SESSION['user_id'] ?? "";
 $user_rol = $_SESSION['user_rol'] ?? "";
 $user_img = $_SESSION['user_img'] ?? "";
 ?>
-<html lang="es">
+
 
 <head>
   <meta charset="UTF-8">
@@ -42,7 +42,7 @@ $user_img = $_SESSION['user_img'] ?? "";
               <a class="nav-link" href="/student044/dwes/index.php">Inicio</a>
               <a class="nav-link" href="/student044/dwes/forms/room/form_room_select.php">Habitaciones</a>
             </div>
-            
+
             <!-- Mostrar la foto del usuario -->
             <div class="dropdown ms-1">
               <button class="btn btn-user dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -142,3 +142,4 @@ $user_img = $_SESSION['user_img'] ?? "";
 
   </header>
   <main>
+   

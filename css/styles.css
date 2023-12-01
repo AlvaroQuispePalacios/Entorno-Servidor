@@ -126,6 +126,8 @@ tr:nth-child(even) {
   outline: 0;
 }
 
+
+
 .bg-dark{
   background-color: #141414 !important;
 }
@@ -133,6 +135,7 @@ tr:nth-child(even) {
 .nav-pills li a:hover{
   background-color: #9592c8;
 }
+
 
 
 /*
