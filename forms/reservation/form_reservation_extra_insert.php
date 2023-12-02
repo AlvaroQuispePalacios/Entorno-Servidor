@@ -19,7 +19,7 @@
         <label>Fecha: </label>
         <input type="datetime" name="extra_date" placeholder="YY-MM-DD HH-MM-SS">
         <label>Precio: </label>
-        <input type="number" name="extra_price" min="0">
+        <input type="number" name="extra_price" step=0.01>
         
         <input type="submit" name="submit" value="Agregar extra">
 

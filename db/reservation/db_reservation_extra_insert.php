@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
+
 <?php
     if(isset($_POST['submit'])){
 
@@ -20,23 +20,27 @@
         $sql_db_json = "SELECT * FROM 044_reservation WHERE reservation_id='$reservation_id'";
         $query_db_json = mysqli_query($con, $sql_db_json);
         $db_json = mysqli_fetch_all($query_db_json, MYSQLI_ASSOC);
+
         $db_json_decode = json_decode($db_json[0]['reservation_extras'], true);
         $db_json_decode_keys = array_keys($db_json_decode);
-        print_r($db_json_decode_keys);
+
         foreach($db_json_decode_keys as $json_key){
             if($json_key == $reservation_extra){
-                
+
+                array_push($db_json_decode[$reservation_extra], $extras);
+                $insert_extra = json_encode($db_json_decode);
+                echo "<br>";
+                print_r($insert_extra);
+
+                $sql = "UPDATE 044_reservation SET reservation_extras = '$insert_extra' WHERE reservation_id = $reservation_id";
+
+                $query = mysqli_query($con, $sql);
+                if($query){
+                    header('Location: /student044/dwes/db/reservation/db_reservation_select.php');
+                }else{
+                    echo 'Se ha producido un error';
+                }
             }
         }
-        // array_push($extras, $get_json);
-        // print_r($get_json[0]);
-        
-        $sql_put_json = "UPDATE 044_reservation SET reservation_extras = $ WHERE reservation_id = '$reservation_id'";
-        // $query = mysqli_query($con, $sql);
-        
-
     }
 ?>
-
-
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
