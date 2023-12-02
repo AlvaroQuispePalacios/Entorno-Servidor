@@ -1,11 +1,11 @@
 :root {
-  --body-color: #fff9fb;
-  /* --content-color: #F6F6EF; */
-  --content-color: #9592c8;
-  --navbar-color: #141414;
-  --card-color: hsla(214, 48%, 64%, 0.723);
-  --other: rgb(159, 130, 174);
-  /* 
+    --body-color: #fff9fb;
+    /* --content-color: #F6F6EF; */
+    --content-color: #9592c8;
+    --navbar-color: #141414;
+    --card-color: hsla(214, 48%, 64%, 0.723);
+    --other: rgb(159, 130, 174);
+    /* 
      141414
      F6F6EF
      AFAED6
@@ -15,128 +15,148 @@
 /*--------------------------- Navbar -------------------------------*/
 
 body {
-  background-color: #fff;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .logo {
-  padding: 5px;
-  width: 70px;
-  height: 70px;
+    padding: 5px;
+    width: 70px;
+    height: 70px;
 }
 
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: var(--navbar-color) !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--navbar-color) !important;
 }
 
 /*--------------------------- Login -------------------------------*/
 .login-card-content {
-  background-color: var(--content-color);
-  padding: 2.5rem;
+    background-color: var(--content-color);
+    padding: 2.5rem;
 }
 
 .btn-primary {
-  border: 0;
-  background-color: #141414;
+    border: 0;
+    background-color: #141414;
 }
 
 .btn-primary:hover {
-  /* color: black; */
-  background-color: rgba(20, 20, 20, 0.889);
+    /* color: black; */
+    background-color: rgba(20, 20, 20, 0.889);
 }
 
 .login-card-background-img {
-  background-image: url(/student044/dwes/img/Hotel.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+    background-image: url(/student044/dwes/img/Hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .login-card-background {
-  background-color: var(--navbar-color);
+    background-color: var(--navbar-color);
 }
 
 .login-card-img {
-  max-width: 20rem;
-  opacity: 0.9;
+    max-width: 20rem;
+    opacity: 0.9;
 }
 
 .login-card-title {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* -------------------------------Index------------------------ */
 
 .index-hotel {
-  width: 100%;
+    width: 100%;
 }
 
 .card-room__img {
-  background-image: url(/student044/dwes/img/rooms.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 20rem;
+    background-image: url(/student044/dwes/img/rooms.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
 }
 
-@media (min-width: 992px) {
-  .carousel-item > img {
-    height: 91vh !important;
-  }
 
-  .card-room__img {
-    height: 30rem;
-  }
-}
-
-table,
+/* table,
 tr,
 td,
 th {
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.145);
-  padding: 0.5rem;
-}
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.145);
+    padding: 0.5rem;
+} */
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 .btn-user {
-  /* background-color: #9592C8; */
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.55);
-  padding: 0.4rem;
+    /* background-color: #9592C8; */
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    padding: 0.4rem;
 }
 
 .btn-user__img {
-  border-radius: 50%;
-  width: 2rem;
+    border-radius: 50%;
+    width: 2rem;
 }
 
 .btn-user:hover {
-  background-color: #141414;
-  color: white;
+    background-color: #141414;
+    color: white;
 }
 
 .btn-user:focus {
-  background-color: #141414;
-  color: white;
-  border: 0;
-  outline: 0;
+    background-color: #141414;
+    color: white;
+    border: 0;
+    outline: 0;
 }
 
 
 
-.bg-dark{
-  background-color: #141414 !important;
+.bg-dark {
+    background-color: #141414 !important;
 }
 
-.nav-pills li a:hover{
-  background-color: #9592c8;
+.nav-pills li a:hover {
+    background-color: #9592c8;
 }
 
+#reservation,
+#customer,
+#room,
+#room_category {
+    max-width: 92px;
+}
 
+@media (min-width: 576px) {
+
+    #reservation,
+    #customer,
+    #room,
+    #room_category {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item>img {
+        height: 91vh !important;
+    }
+
+    .card-room__img {
+        height: 30rem;
+    }
+
+
+}
 
 /*
 .contenedor-form{

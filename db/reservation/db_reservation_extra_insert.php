@@ -26,15 +26,12 @@
 
         foreach($db_json_decode_keys as $json_key){
             if($json_key == $reservation_extra){
-
                 array_push($db_json_decode[$reservation_extra], $extras);
                 $insert_extra = json_encode($db_json_decode);
-                echo "<br>";
-                print_r($insert_extra);
 
                 $sql = "UPDATE 044_reservation SET reservation_extras = '$insert_extra' WHERE reservation_id = $reservation_id";
-
                 $query = mysqli_query($con, $sql);
+
                 if($query){
                     header('Location: /student044/dwes/db/reservation/db_reservation_select.php');
                 }else{

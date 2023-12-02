@@ -11,6 +11,7 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
 ?>
 
+
 <table class="mt-3 text-center w-100">
     <tr class="p-2">
         <th>Reservation ID</th>

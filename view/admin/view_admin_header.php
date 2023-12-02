@@ -1,16 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DucksHotel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/student044/dwes/css/styles.css">
-</head>
-
-<body>
     <div class="container-fluid">
         <div class="row">
             <div class="sidemenu d-flex p-2 flex-column justify-content-between col-auto col-sm-3 col-lg-2 bg-dark min-vh-100">
@@ -106,5 +93,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col">
+</header>
+<main>
+        <!-- <div class="col">
 
+        </div>
+    </div>
+</div> -->
