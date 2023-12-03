@@ -1,8 +1,8 @@
-    <?php if ($user_rol == 'admin') { ?>
+    <?php if ($user_rol == 'admin'){ ?>
         </div>
         </div>
         </div>
-    <?php } ?>
+    <?php }?>
     </main>
     <footer>
         <div class="copyright">Copyright 2023</div>

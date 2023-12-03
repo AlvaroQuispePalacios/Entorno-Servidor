@@ -10,10 +10,10 @@
 
 ?>
 
-<div style="padding: 3rem;">
-    <h2>Categorias</h2>
-    <table>
-        <tr>
+<div class="title">Categorias</div>
+<div>
+    <table class="text-center">
+        <tr class="tableTitle">
             <th>Categoria ID</th>
             <th>Nombre Categoria</th>
             <th>Precio</th>

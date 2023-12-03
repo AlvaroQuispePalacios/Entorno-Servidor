@@ -12,6 +12,9 @@ $sql_customer = ("SELECT * FROM 044_customer");
 $query_customer = mysqli_query($con, $sql_customer);
 $customers = mysqli_fetch_all($query_customer, MYSQLI_ASSOC);
 
+
+
+
 $sql_room = ("SELECT * FROM 044_room INNER JOIN 044_room_category ON 044_room.room_category = 044_room_category.room_category_id");
 $query_room = mysqli_query($con, $sql_room);
 $rooms = mysqli_fetch_all($query_room, MYSQLI_ASSOC);
@@ -34,11 +37,13 @@ mysqli_close($con);
     </select>
 
     <label>Room ID:</label>
-    <select name="room_id" id="formReservationInsertRoomId">
+    <select name="room_id" id="formReservationInsertRoomId" required>
+        <option value="">Elige una habitacion</option>
         <?php foreach ($rooms as $room) { ?>
-            <option value="<?php print_r($room['room_id']) ?>"><?php print_r($room['room_id']) ?>-<?php print_r($room['room_category_name']) ?></option>
+            <option value="<?php print_r($room['room_id']) ?>" ><?php print_r($room['room_id']) ?>-<?php print_r($room['room_category_name']) ?></option>
         <?php } ?>
     </select>
+    
 
     <label>Date In:</label>
     <input type="date" name="reservation_date_in" id="formReservationInsertDateIn" required>
@@ -136,8 +141,9 @@ mysqli_close($con);
             let price = +formReservationInsertPreviewPrice.textContent;
             let diffDates = dateOut.diff(dateIn, 'days');
             let total = (diffDates * price).toFixed(2);
-            if(total == NaN){
-                ormReservationInsertPreviewTotal.textContent = '';
+
+            if(total <= 0 || isNaN(total)){
+                formReservationInsertPreviewTotal.textContent = '';
             }else{
                 formReservationInsertPreviewTotal.textContent = `${total}€`;
 

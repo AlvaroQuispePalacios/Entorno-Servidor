@@ -143,11 +143,11 @@ $user_img = $_SESSION['user_img'] ?? "";
 			</nav>
 
 		</header>
-	<?php } ?>
+	<?php }?>
 
 	<main>
 
-		<?php if ($user_rol == 'admin') { ?>
+		<?php if($user_rol == 'admin'){?>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="sidemenu d-flex p-2 flex-column justify-content-between col-auto col-sm-3 col-lg-2 bg-dark min-vh-100">
@@ -159,11 +159,8 @@ $user_img = $_SESSION['user_img'] ?? "";
 								<a class="d-flex d-none d-sm-inline text-decoration-none mt-1 align-items-center text-white" role="button">
 									<div class="fs-2">Hotel</div>
 								</a>
-
 							</div>
-
 							<hr class="text-white d-none d-sm-block mt-0">
-
 							<ul class="nav nav-pills flex-column mt-2 mt-sm-0" id="menu">
 
 								<li class="nav-item">
@@ -292,10 +289,5 @@ $user_img = $_SESSION['user_img'] ?? "";
 
 						</div>
 					</div>
-
-
 					<div class="col px-0">
-
-
-
-					<?php } ?>
+		<?php }?>
