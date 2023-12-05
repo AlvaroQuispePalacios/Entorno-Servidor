@@ -48,7 +48,7 @@
         <div class="col-12 col-sm-12 col-md-6 order-0 d-flex flex-column justify-content-center align-items-center p-5">
           <h2 class="fw-bold">Habitaciones</h2>
           <p class="text-start card_room_text">
-            Bienvenido a un enclave de elegancia y sofisticación, donde el lujo encuentra su máxima expresión: nuestras exclusivas habitaciones de <span class="fw-bold">Ducks Hotel</span>. Diseñadas con un toque de opulencia y atención meticulosa a cada detalle, nuestras estancias ofrecen un refugio de confort y distinción. A
+            Bienvenido a un enclave de elegancia y sofisticación, donde el lujo encuentra su máxima expresión: nuestras exclusivas habitaciones de <span class="fw-bold">Ducks Hotel</span>. Diseñadas con un toque de opulencia y atención meticulosa a cada detalle, nuestras estancias ofrecen un refugio de confort y distinción.
           </p>
         </div>
       </div>

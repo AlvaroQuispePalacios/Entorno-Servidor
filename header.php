@@ -47,12 +47,16 @@ $user_img = $_SESSION['user_img'] ?? "";
 							<!-- Mostrar la foto del usuario -->
 							<div class="dropdown ms-1">
 								<button class="btn btn-user dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<img src="<?php echo $user_img; ?>" class="btn-user__img">
+									<img src="<?php echo $user_img; ?>" class="btn-user__img rounded-circle">
 									<span><?php echo $user_name ?></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="">Mis reservas</a></li>
-									<li><a class="dropdown-item" href="/student044/dwes/db/db_log_out.php">Log Out</a></li>
+									<li>
+										<a class="dropdown-item" href="/student044/dwes/db/reservation/db_reservation_select_customer.php">Mis reservas</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="/student044/dwes/db/db_log_out.php">Log Out</a>
+									</li>
 								</ul>
 							</div>
 					</div>
@@ -133,7 +137,7 @@ $user_img = $_SESSION['user_img'] ?? "";
 
 					<div class="navbar-nav ms-lg-auto">
 						<a class="nav-link" href="/student044/dwes/index.php">Inicio</a>
-						<a class="nav-link" href="/student044/dwes/forms/room/form_room_select.php">Habitaciones</a>
+						<a class="nav-link" href="/student044/dwes/forms/room/form_room_select_customer.php">Habitaciones</a>
 						<a class="nav-link" href="/student044/dwes/forms/form_login.php">Login</a>
 					</div>
 

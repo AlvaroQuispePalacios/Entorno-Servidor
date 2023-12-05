@@ -100,8 +100,8 @@ tr:nth-child(even) {
 }
 
 .btn-user__img {
-    border-radius: 50%;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .btn-user:hover {
@@ -170,10 +170,11 @@ tr:nth-child(even) {
     background-color: #9592c8;
     color: white;
     padding: .7rem;
-    list-style: none;
+    /* list-style: none; */
     cursor: pointer;
     text-align: center;
     border-radius: 5px;
+    text-align: start;
 }
 
 .section ul{
