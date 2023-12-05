@@ -133,7 +133,7 @@ $user_img = $_SESSION['user_img'] ?? "";
 
 					<div class="navbar-nav ms-lg-auto">
 						<a class="nav-link" href="/student044/dwes/index.php">Inicio</a>
-						<a class="nav-link" href="/student044/dwes/forms/room/form_room_select.php">Habitaciones</a>
+						<a class="nav-link" href="/student044/dwes/forms/room/form_room_select_customer.php">Habitaciones</a>
 						<a class="nav-link" href="/student044/dwes/forms/form_login.php">Login</a>
 					</div>
 
