@@ -5,6 +5,7 @@
 <div class="form">
     <form class="d-flex p-5" action="/student044/dwes/db/customer/db_customer_insert.php" method="POST" enctype="multipart/form-data">
         <div class="container contenedor__form">
+        <h4>Datos del cliente</h4>
             <div class="row">
 
                 <div class="col-6">

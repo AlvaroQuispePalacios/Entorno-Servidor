@@ -25,35 +25,43 @@ mysqli_close($con);
 ?>
 
 <h2>Nueva reserva</h2>
+<div class="p-5">
+    <div class="contenedor__form">
 
-<form action="/student044/dwes/db/reservation/db_reservation_insert.php" method="POST">
+        <form action="/student044/dwes/db/reservation/db_reservation_insert.php" method="POST">
+            <h4 class="text-center">Datos de la reserva</h4>
+            <div class="d-flex flex-column justify-content-center align-items-center">
 
-    <label>Usuario ID:</label>
-    <select name="customer_id" id="formReservationInsertCustomerId" required>
-        <option value="">Elige un usuario</option>
-        <?php foreach ($customers as $customer) { ?>
-            <option value="<?php print_r($customer['customer_id']) ?>"><?php print_r($customer['customer_id']) ?></option>
-        <?php } ?>
-    </select>
-
-    <label>Room ID:</label>
-    <select name="room_id" id="formReservationInsertRoomId" required>
-        <option value="">Elige una habitacion</option>
-        <?php foreach ($rooms as $room) { ?>
-            <option value="<?php print_r($room['room_id']) ?>" ><?php print_r($room['room_id']) ?>-<?php print_r($room['room_category_name']) ?></option>
-        <?php } ?>
-    </select>
-    
-
-    <label>Date In:</label>
-    <input type="date" name="reservation_date_in" id="formReservationInsertDateIn" required>
-
-    <label>Date Out:</label>
-    <input type="date" name="reservation_date_out" id="formReservationInsertDateOut" required>
-
-    <input type="submit" name="submit" value="Insertar reserva">
-
-    
+                <label>Usuario ID:</label>
+                <select class="w-50 p-2" name="customer_id" id="formReservationInsertCustomerId" required>
+                    <option value="">Elige un usuario</option>
+                    <?php foreach ($customers as $customer) { ?>
+                        <option value="<?php print_r($customer['customer_id']) ?>"><?php print_r($customer['customer_id']) ?></option>
+                    <?php } ?>
+                </select>
+            
+                <label>Room ID:</label>
+                <select class="w-50 p-2" name="room_id" id="formReservationInsertRoomId" required>
+                    <option value="">Elige una habitacion</option>
+                    <?php foreach ($rooms as $room) { ?>
+                        <option value="<?php print_r($room['room_id']) ?>" ><?php print_r($room['room_id']) ?>-<?php print_r($room['room_category_name']) ?></option>
+                    <?php } ?>
+                </select>
+                
+            
+                <label>Date In:</label>
+                <input class="w-50" type="date" name="reservation_date_in" id="formReservationInsertDateIn" required>
+            
+                <label>Date Out:</label>
+                <input class="w-50" type="date" name="reservation_date_out" id="formReservationInsertDateOut" required>
+            
+                <input type="submit" name="submit" value="Insertar reserva">
+            
+                
+            </div>
+        </form>
+    </div>
+    <br>
     <h4>Preview</h4>
     <table class="table" id="formReservationInsertPreview">
         <thead>
@@ -85,7 +93,7 @@ mysqli_close($con);
     <div class="d-flex justify-content-center">
         <small>El precio total estimado <b>no cuenta los extras</b></small>
     </div>
-</form>
+</div>
 <script src="http://momentjs.com/downloads/moment.min.js"></script>
 <script>
     // Room
