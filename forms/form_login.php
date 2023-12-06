@@ -30,7 +30,7 @@
 
                 <!-- Submit -->
                 <div class="d-grid gap-2">
-                    <input class="btn btn-primary" type="submit" name="submit" value="Entrar">
+                    <input class="btn btn-primary w-100" type="submit" name="submit" value="Entrar">
                 </div>
 
             </form>
