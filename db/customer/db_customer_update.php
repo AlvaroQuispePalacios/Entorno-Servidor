@@ -21,13 +21,13 @@
         $sql = "UPDATE 044_customer SET customer_name = '$customer_name', customer_surname = '$customer_surname', customer_phone = '$customer_phone', customer_email = '$customer_email', customer_password = '$customer_password', customer_rol = '$customer_rol', customer_img = '$path_img' WHERE customer_id = $customer_id";
 
         $resultado = mysqli_query($con, $sql);
-        if($resultado){
-            echo "Los datos se han actualizado";
-        }else{
-            echo "No se han podido actualizar los datos";
-        }
-        mysqli_close($con);
+
     }
 ?>
 
+<?php if($resultado){ ?>
+    <?php echo "actualizado"?>
+<?php }else {?>
+    <?php echo "error"?>
+<?php }?>
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/footer.php')?>

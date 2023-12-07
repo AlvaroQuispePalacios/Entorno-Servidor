@@ -11,7 +11,7 @@
 ?>
 
 <div class="title">Categorias</div>
-<div>
+<div class="d-flex justify-content-center px-5">
     <table class="text-center">
         <tr class="tableTitle">
             <th>Categoria ID</th>

@@ -32,7 +32,7 @@
                     </div>
                     -->
                 <div class="submit">
-                    <input class="btn btn-primary" type="submit" value="Ver" name="submit">
+                    <input class="btn btn-primary w-100" type="submit" value="Ver" name="submit">
                 </div>
             </form>
         </div>
