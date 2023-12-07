@@ -4,15 +4,16 @@
 
 <h2>Actualizar Reservas</h2>
 
-<div class="contenedor-form">
-    <div class="form">
+<div class="p-5">
+    <div class="contenedor__form">
 
         <form action="/student044/dwes/db/reservation/db_reservation_update.php" method="post">
+            <h4>Datos de la reserva</h4>
             <label for="">Reserva ID: </label>
             <input type="text" value="<?php echo $reservation_id;?>" readonly name="reservation_id">
         
             <label for="">Cliente ID: </label>
-            <input type="text" value="<?php echo $customer_id;?>" name="customer_id">
+            <input type="text" value="<?php echo $customer_id;?> " name="customer_id" readonly>
         
             <label for="">Habitacion ID: </label>
             <input type="text" value="<?php echo $room_id;?>" name="room_id">
@@ -31,7 +32,7 @@
             <input type="text" value="<?php echo $reservation_price;?>" name="reservation_price">
         
             <label for="">Status de la habitacion</label>
-            <select name="reservation_status">
+            <select class="p-2 w-100 mb-4" name="reservation_status">
                 <?php if($reservation_status == 'BOOKED') {?>
                     <option value="BOOKED" selected="selected">BOOKED</option>
                     <option value="CHECK_IN">CHECK_IN</option>
@@ -66,7 +67,9 @@
                 
             </select>
             
-            <input type="submit" value="Actualizar" name="submit">
+            <div class="d-flex justify-content-center ">
+                <input type="submit" value="Actualizar" name="submit">
+            </div>
         
         </form>
     </div>

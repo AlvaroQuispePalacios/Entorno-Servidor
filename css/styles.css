@@ -15,8 +15,11 @@
 /*--------------------------- Navbar -------------------------------*/
 
 body {
-    background-color: #fff;
+    background-color: #ffffff9e;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .logo {
@@ -133,7 +136,7 @@ tr:nth-child(even) {
     max-width: 92px;
 }
 
-.volverAtras{
+.volverAtras {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,19 +147,19 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-.msgError{
+.msgError {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title{
+.title {
     font-size: 2.5rem;
     padding: .5rem;
     margin-bottom: 5px;
 }
 
-.section{
+.section {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -166,7 +169,7 @@ tr:nth-child(even) {
     gap: .2rem;
 }
 
-.section summary{
+.section summary {
     background-color: #9592c8;
     color: white;
     padding: .7rem;
@@ -177,13 +180,110 @@ tr:nth-child(even) {
     text-align: start;
 }
 
-.section ul{
+.section ul {
     background-color: #fff9fb;
     list-style: none;
     border-radius: 5px;
     padding: .5rem 1rem .5rem;
 }
 
+
+
+/* FORM_ROOM_SELECT_CUSTOMER */
+
+
+.contenedor__formulario__habitaciones {
+    max-width: 1000px;
+}
+
+.img__habitaciones {
+    filter: blur(1px);
+    width: 500px;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #141414;
+    margin-top: auto;
+}
+
+.footer__content {
+    padding: 2rem 2rem 0;
+    color: #fff;
+}
+
+.footer__contact p:nth-child(2) {
+    color: #ffffffb8;
+    font-size: .9rem;
+}
+
+.footer__logo img {
+    max-width: 200px;
+}
+
+.footer__link {
+    color: #ffffffa2;
+    font-size: .8rem;
+}
+
+.footer__link li {
+    cursor: pointer;
+}
+
+.button {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: inherit;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #141414;
+
+}
+
+.contenedor__form{
+    background-color: #9592c8c0;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    font-size: 1.1rem;
+}
+
+input {
+    padding: .3rem .5rem;
+    border: 1px solid #14141483;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+input:focus {
+    box-shadow: 2px -3px 3px #9592c8;
+    border: none;
+}
+
+input[type="submit"]{
+    color: #fff;
+    width: 50%;
+    background-color: #141414;
+}
+
+input[type="submit"]:hover{
+    background-color: #2b2b2b;
+}
+
+input[type="submit"]:focus{
+    box-shadow: 2px 2px 2px black;
+    background-color: #141414;
+}
 
 @media (min-width: 576px) {
 
@@ -208,57 +308,12 @@ tr:nth-child(even) {
 }
 
 /*
-.contenedor-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.form{
-    padding: 2rem;
-
-}
-
-.form__date{
-    display: flex;
-    gap: 2rem;
-
-    margin-bottom: 1rem;
-}
 
 
-.date{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    text-align: center;
-    gap: 1rem;
-}
 
-.date label{
 
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 
-input[type='date']{
-    background-color: #F6F6EF;
-    color: black;
-    padding: 1rem;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    
-}
 
-::-webkit-calendar-picker-indicator{
-    background-color: #9592C8;
-    padding: .5rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
 .submit{
     text-align: center;

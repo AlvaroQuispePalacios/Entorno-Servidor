@@ -3,12 +3,12 @@
 <!-- Busca los datos del cliente en base a su id -->
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_select_customer_id.php')?>
 
-<?php echo $customer_id;?>
 
 <h3>Actualizar datos del cliente</h3>
-<div class="contenedor-form">
-    <div class="form">
+<div class="p-5">
+    <div class="contenedor__form">
         <form action="/student044/dwes/db/customer/db_customer_update.php" method="POST"  enctype="multipart/form-data">
+        <h4>Datos del cliente</h4>
             <label for="">Identificador: </label>
             <input type="text" name="customer_id" readonly value="<?php echo $customer_id?>">
             
@@ -40,7 +40,10 @@
             <!-- Con javaScript puedes mostrar una previsualisacion de la imagen(RECUERDA HACERLO) -->
             <label for="">Image: </label>
             <input type="file" name="file"> 
-            <input type="submit" name="submit" value="Actualizar">
+            <div class="d-flex justify-content-center">
+
+                <input type="submit" name="submit" value="Actualizar">
+            </div>
         </form>
 
     </div>
