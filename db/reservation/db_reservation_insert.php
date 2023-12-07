@@ -18,12 +18,11 @@ if (isset($_POST['submit'])) {
         $query_room = mysqli_query($con, $sql_room);
         $room = mysqli_fetch_all($query_room, MYSQLI_ASSOC);
         $reservation_price = ($room[0]["room_category_price"]);
+        // JSON QUE VA A SER INSERTADO
+        $json = json_encode('{"restaurante":[], "bar":[], "spa":[]}');
 
-
-        $sql = "INSERT INTO 044_reservation (reservation_id, customer_id, room_id, reservation_date_in, reservation_date_out, reservation_price, reservation_status)
-            VALUES
-            (DEFAULT, '$customer_id', '$room_id', '$reservation_date_in', '$reservation_date_out', '$reservation_price', 'BOOKED');
-            ";
+        $sql = "INSERT INTO 044_reservation (reservation_id, customer_id, room_id, reservation_date_in, reservation_date_out, reservation_price, reservation_status, reservation_extras)
+        VALUES (DEFAULT, '$customer_id', '$room_id', '$reservation_date_in', '$reservation_date_out', '$reservation_price', 'BOOKED', $json)";
 
         $query = mysqli_query($con, $sql);
 
@@ -36,7 +35,7 @@ if (isset($_POST['submit'])) {
 
         mysqli_close($con);
     } else {
-    
+
 ?>
         <a href="/student044/dwes/forms/reservation/form_reservation_insert.php" class="volverAtras">
             <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 448 512">
@@ -50,7 +49,7 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
 
-    <?php }?>
+    <?php } ?>
 <?php } ?>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>

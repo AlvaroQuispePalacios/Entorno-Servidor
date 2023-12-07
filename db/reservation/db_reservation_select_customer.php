@@ -20,9 +20,10 @@ if ($user_id != NULL || $user_id != "") {
         <th>Date in</th>
         <th>Date out</th>
         <th>Reservation Price</th>
-        <th>Subtotal Reservation</th>
+        <th>Subtotal</th>
         <th>Reservation Status</th>
         <th>Reservation Extras</th>
+        <th>Total</th>
         <th>Actions</th>
     </tr>
 
@@ -49,7 +50,15 @@ if ($user_id != NULL || $user_id != "") {
                 <?php print_r($reservation['reservation_price']); ?>
             </td>
             <td>
-
+                <?php
+                    $price = $reservation['reservation_price'];
+                    $date_in = new DateTime($reservation['reservation_date_in']);
+                    $date_out = new DateTime($reservation['reservation_date_out']);
+                    $diferencia = $date_in->diff($date_out);
+                    $diferencia_dias = $diferencia->days;
+                    $subtotal = $diferencia_dias*$price;
+                    echo $subtotal."€";
+                    ?>
             </td>
             <td>
                 <?php print_r($reservation['reservation_status']); ?>
@@ -100,15 +109,12 @@ if ($user_id != NULL || $user_id != "") {
                         Total: <?php echo $total_extras; ?>€
                     </div>
                 <?php } ?>
-                <!-- <form action="/student044/dwes/forms/reservation/form_reservation_extra_insert.php" method="POST">
-                    <input type="text" name="reservation_id" value="<?php print_r($reservation['reservation_id']) ?>" hidden>
-                    <button type="submit" name="submit" class="btn btn-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" fill="white" viewBox="0 0 448 512">
-                            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-                        </svg>
-                    </button>
-                </form> -->
-                <!-- Insertar servicio  -->
+            </td>
+            <td>
+                <?php
+                    $total_reservation = $subtotal+$total_extras;
+                    echo $total_reservation."€";
+                ?>
             </td>
             <td class="d-flex justify-content-center gap-2">
                 <form action="/student044/dwes/forms/reservation/form_reservation_delete.php" method="POST">

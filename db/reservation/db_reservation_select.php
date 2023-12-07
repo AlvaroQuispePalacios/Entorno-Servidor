@@ -20,8 +20,10 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
         <th>Date in</th>
         <th>Date out</th>
         <th>Reservation Price</th>
+        <th>Subtotal</th>
         <th>Reservation Status</th>
         <th>Reservation Extras</th>
+        <th>Total</th>
         <th>Actions</th>
     </tr>
 
@@ -46,6 +48,17 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
             </td>
             <td>
                 <?php print_r($reservation['reservation_price']); ?>
+            </td>
+            <td>
+                <?php
+                    $price = $reservation['reservation_price'];
+                    $date_in = new DateTime($reservation['reservation_date_in']);
+                    $date_out = new DateTime($reservation['reservation_date_out']);
+                    $diferencia = $date_in->diff($date_out);
+                    $diferencia_dias = $diferencia->days;
+                    $subtotal = $diferencia_dias*$price;
+                    echo $subtotal."€";
+                    ?>
             </td>
             <td>
                 <?php print_r($reservation['reservation_status']); ?>
@@ -95,7 +108,7 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
                     <div>
                         Total: <?php echo $total_extras; ?>€
                     </div>
-                    <?php } ?>
+                <?php } ?>
                 <form action="/student044/dwes/forms/reservation/form_reservation_extra_insert.php" method="POST">
                     <input type="text" name="reservation_id" value="<?php print_r($reservation['reservation_id']) ?>" hidden>
                     <button type="submit" name="submit" class="btn btn-secondary">
@@ -105,6 +118,12 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
                     </button>
                 </form>
                 <!-- Insertar servicio  -->
+            </td>
+            <td>
+                <?php
+                    $total_reservation = $subtotal+$total_extras;
+                    echo $total_reservation."€";
+                ?>
             </td>
 
             <td class="d-flex justify-content-center gap-2">
@@ -123,6 +142,13 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" fill="white" viewBox="0 0 448 512">
                             <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
                         </svg>
+                    </button>
+                </form>
+
+                <form action="#" method="POST">
+                    <input type="text" name="reservation_id" value="<?php print_r($reservation['reservation_id']); ?>" hidden>
+                    <button type="submit" name="submit" class="generarFactura">
+                        Generar Factura
                     </button>
                 </form>
             </td>

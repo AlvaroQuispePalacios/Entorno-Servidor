@@ -285,6 +285,15 @@ input[type="submit"]:focus{
     background-color: #141414;
 }
 
+.generarFactura{
+    background-color: rgb(39, 145, 244);
+    color: #fff;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
 @media (min-width: 576px) {
 
     #reservation,
