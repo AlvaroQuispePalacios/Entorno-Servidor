@@ -62,7 +62,7 @@ mysqli_close($con);
                         <?php print_r($customer['customer_rol']); ?>
                     </td>
                     <td>
-                        <img src="<?php print_r($customer['customer_img']); ?>" alt="img_user" width="100px" height="39px">
+                        <img src="<?php print_r($customer['customer_img'])?>" alt="img_user" width="100px" height="39px">
                     </td>
                     <td class="d-flex gap-2">
                         <form action="/student044/dwes/forms/customer/form_customer_update.php" method="POST">

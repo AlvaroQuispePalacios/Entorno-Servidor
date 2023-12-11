@@ -19,11 +19,16 @@ if (isset($_POST['submit'])) {
         $room = mysqli_fetch_all($query_room, MYSQLI_ASSOC);
         $reservation_price = ($room[0]["room_category_price"]);
         // JSON QUE VA A SER INSERTADO
-        $json = json_encode('{"restaurante":[], "bar":[], "spa":[]}');
+        $json_array = ["restaurante"=>[], "bar"=>[], "spa"=>[]];
+        // $json = '{\"restaurante\":[], \"bar\":[], \"spa\":[]}';
+        $json =json_encode($json_array);
 
         $sql = "INSERT INTO 044_reservation (reservation_id, customer_id, room_id, reservation_date_in, reservation_date_out, reservation_price, reservation_status, reservation_extras)
-        VALUES (DEFAULT, '$customer_id', '$room_id', '$reservation_date_in', '$reservation_date_out', '$reservation_price', 'BOOKED', $json)";
-
+        VALUES (DEFAULT, '$customer_id', '$room_id', '$reservation_date_in', '$reservation_date_out', '$reservation_price', 'BOOKED', '$json')";
+    print_r($json_array);
+    echo "<br>";
+    echo $json;
+    echo "<br>";
         $query = mysqli_query($con, $sql);
 
         if ($query) {

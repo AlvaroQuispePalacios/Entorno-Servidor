@@ -14,10 +14,15 @@
 
             //Conexion a la base de datos
             include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/db/db_connect.php');
+
+            // JSON QUE VA A SER INSERTADO
+            $json_array = ["restaurante"=>[], "bar"=>[], "spa"=>[]];
+            // $json = '{\"restaurante\":[], \"bar\":[], \"spa\":[]}';
+            $json =json_encode($json_array);
             
-            $sql = "INSERT INTO 044_reservation (reservation_id, customer_id, room_id, reservation_date_in, reservation_date_out, reservation_price, reservation_status)
+            $sql = "INSERT INTO 044_reservation (reservation_id, customer_id, room_id, reservation_date_in, reservation_date_out, reservation_price, reservation_status, reservation_extras)
             VALUES
-            (DEFAULT, '$user_id', '$room_id', '$reservation_date_in', '$reservation_date_out', '$reservation_price', '$reservation_status');
+            (DEFAULT, '$user_id', '$room_id', '$reservation_date_in', '$reservation_date_out', '$reservation_price', '$reservation_status', '$json');
             ";
             
             $query = mysqli_query($con, $sql);
