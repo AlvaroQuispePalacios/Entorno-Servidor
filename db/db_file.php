@@ -19,7 +19,7 @@ if(isset($_FILES['file'])){
 
     // Comprobar que el archivo sea jpg, webp, png, jpge y guardamos la ruta de la imagen para agregarlo a la base de datos, si no es ninguno de estos formatos le pasaremos la ruta de la imagen por defecto
     if(in_array($file_type, $valid_types)){
-        // Cuando el usuario no suba una imagen se ponga la por defecto pero si ya tiene una
+        // Cuando el usuario no suba una imagen se ponga la por defecto pero si ya tiene una la deje
         $path_img = '/student044/dwes/img/'.$file_name;
         move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT'].$path_img);
 
