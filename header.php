@@ -276,7 +276,7 @@ $user_img = $_SESSION['user_img'] ?? "";
 											<a class="nav-link text-white" href="/student044/dwes/db/reservation/db_reservation_select.php" aria-current="page">Select</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link text-white" href="/student044/dwes/forms/reservation/form_reservation_insert.php" aria-current="page">Insert</a>
+											<a class="nav-link text-white" href="/student044/dwes/forms/reservation/form_reservation_insert_call.php" aria-current="page">Insert</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link text-white" href="/student044/dwes/forms/reservation/form_reservation_update_call.php" aria-current="page">Update</a>
