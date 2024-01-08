@@ -1,5 +1,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/student044/dwes/header.php')?>
 
+
+
 <div class=" d-flex justify-content-center align-items-center p-3 pt-0">
 
     <section class="rounded row mt-3 border">
@@ -18,7 +20,7 @@
                 
                 <!-- Email -->
                 <div class="form-floating mb-3" >
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="customer_email">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="customer_email">
                     <label for="floatingInput">Email</label>
                 </div>
 

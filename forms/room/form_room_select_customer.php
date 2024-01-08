@@ -1,6 +1,5 @@
 <!-- Muestra todas las habitaciones -->
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
-
 <!-- <h3>Habitaciones</h3> -->
 <div class="container-fluid d-flex justify-content-center h-90 py-5">
     <div class="contenedor__formulario__habitaciones row d-flex justify-content-center align-items-center mb-3">
@@ -20,6 +19,8 @@
                     <input type="date" class="form-control" id="floatingDate" name="date_out" required>
                     <label for="floatingDate">Salida</label>
                 </div>
+
+
                 <!-- <div class="form__date">
                         <div class="date date-in">
                             <label for="">Llegada:</label>

@@ -40,7 +40,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+    
     <!-- CARD ROOM -->
     <div class="p-4 p-md-5">
       <div class="row mt-2">
