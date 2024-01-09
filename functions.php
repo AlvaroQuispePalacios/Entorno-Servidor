@@ -1,8 +1,10 @@
 <?php
-    function htmlChars($input){
-        echo htmlspecialchars($input) . "</br>" ;
+    function validateInput($input){
+        return htmlspecialchars($input);
     }
     
+
+
     function campoRequerido($input){
         echo !(trim($input) == "") ? "hay correo" : "No hay correo";
         // return !(trim($input) == "");
