@@ -129,6 +129,13 @@ if ($user_id != NULL || $user_id != "") {
                                 <span>Cancelar</span>
                             </button>
                         </form>
+                        <!-- LUEGO PASAR A UN FICHERO SEPARADO Y AGREGARLO CON UN INCLUDO -->
+                        <form action="/student044/dwes/forms/comment/form_comment_customer_insert.php" method="POST">
+                            <button type="submit" name="submit">
+                                <input type="text" name="reservation_id" value="<?php print_r($reservation['reservation_id']); ?>" hidden>
+                                <span>Dejar comentario</span>
+                            </button>
+                        </form>
                     </td>
                 </tr>
             
