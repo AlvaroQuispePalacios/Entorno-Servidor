@@ -13,8 +13,8 @@
     <label>Escribe tu comentario:  </label>
     <textarea name="comment_content" rows="10" cols="50"></textarea>
     <span>El maximo es de 500</span>
-    <input type="number" name="comment_score" min="0" max="10">
-
+    <input type="number" name="comment_score" min="0" max="10" required>
+    <input type="submit" name="submit" value="Dejar comentario">
 </form>
 
 
