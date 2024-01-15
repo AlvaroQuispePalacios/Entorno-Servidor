@@ -18,6 +18,8 @@ mysqli_close($con);
 <div class="title">
     Customer
 </div>
+
+
 <div class="d-flex justify-content-center align-items-center">
 
     <table class="text-center">
@@ -62,7 +64,7 @@ mysqli_close($con);
                         <?php print_r($customer['customer_rol']); ?>
                     </td>
                     <td>
-                        <img src="<?php print_r($customer['customer_img'])?>" alt="img_user" width="100px" height="39px">
+                        <img src="<?php print_r($customer['customer_img']) ?>" alt="img_user" width="100px" height="39px">
                     </td>
                     <td class="d-flex gap-2">
                         <form action="/student044/dwes/forms/customer/form_customer_update.php" method="POST">
@@ -91,5 +93,6 @@ mysqli_close($con);
         </tbody>
     </table>
 </div>
+
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
