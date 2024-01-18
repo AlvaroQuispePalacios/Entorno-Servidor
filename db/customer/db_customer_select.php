@@ -26,30 +26,11 @@ mysqli_close($con);
     </form>
 </div>
 
-<p>Nombres: <span id="searchName"></span></p>
 
-<div class="d-flex justify-content-center align-items-center">
+<div class="d-flex justify-content-evenly flex-wrap gap-2" id="searchCustomer">
 
-    <table class="text-center">
-        <thead>
-            <tr>
-                <th>Customer ID</th>
-                <th>Customer Name</th>
-                <th>Customer Surname</th>
-                <th>Customer Phone</th>
-                <th>Customer Email</th>
-                <th>Customer Password</th>
-                <th>Customer Rol</th>
-                <th>Customer Image</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody id="searchCustomer">
-            <!-- <div id="searchCustomer">
-            </div> -->
-        </tbody>
-    </table>
 </div>
+
 
 <script>
     function showHint(str) {

@@ -16,12 +16,4 @@ if ($q != "") {
         showCustomer($customer);
     }
 
-}else {
-    $sql = "SELECT * FROM 044_customer";
-    $query = mysqli_query($con, $sql);
-    $customers = mysqli_fetch_all($query, MYSQLI_ASSOC);
-
-    foreach($customers as $customer){
-        showCustomer($customer);
-    }
 }

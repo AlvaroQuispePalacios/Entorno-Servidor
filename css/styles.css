@@ -304,6 +304,11 @@ input[type="submit"]:focus{
     }
 }
 
+.showCustomerSearch{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 @media (min-width: 992px) {
     .carousel-item>img {
         height: 91vh !important;
