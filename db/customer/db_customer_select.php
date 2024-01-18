@@ -19,6 +19,14 @@ mysqli_close($con);
     Customer
 </div>
 
+<div class="search">
+    <form>
+        <label>Nombre:</label>
+        <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
+    </form>
+</div>
+
+<p>Nombres: <span id="searchName"></span></p>
 
 <div class="d-flex justify-content-center align-items-center">
 
@@ -36,63 +44,30 @@ mysqli_close($con);
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody>
-
-            <?php
-            foreach ($customers as $customer) {
-            ?>
-                <tr>
-                    <th>
-                        <?php print_r($customer['customer_id']); ?>
-                    </th>
-                    <td>
-                        <?php print_r($customer['customer_name']); ?>
-                    </td>
-                    <td>
-                        <?php print_r($customer['customer_surname']); ?>
-                    </td>
-                    <td>
-                        <?php print_r($customer['customer_phone']); ?>
-                    </td>
-                    <td>
-                        <?php print_r($customer['customer_email']); ?>
-                    </td>
-                    <td>
-                        <?php print_r($customer['customer_password']); ?>
-                    </td>
-                    <td>
-                        <?php print_r($customer['customer_rol']); ?>
-                    </td>
-                    <td>
-                        <img src="<?php print_r($customer['customer_img']) ?>" alt="img_user" width="100px" height="39px">
-                    </td>
-                    <td class="d-flex gap-2">
-                        <form action="/student044/dwes/forms/customer/form_customer_update.php" method="POST">
-                            <input type="text" name="customer_id" value="<?php print_r($customer['customer_id']); ?>" hidden>
-                            <button type="submit" name="submit" class="btn btn-success">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" fill="white" viewBox="0 0 512 512">
-                                    <path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z" />
-                                </svg>
-                            </button>
-                        </form>
-
-                        <form action="/student044/dwes/forms/customer/form_customer_delete.php" method="POST">
-                            <input type="text" name="customer_id" value="<?php print_r($customer['customer_id']); ?>" hidden>
-                            <button type="submit" name="submit" class="btn btn-danger">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" fill="white" viewBox="0 0 448 512">
-                                    <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
-                                </svg>
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-
-            <?php
-            }
-            ?>
+        <tbody id="searchCustomer">
+            <!-- <div id="searchCustomer">
+            </div> -->
         </tbody>
     </table>
 </div>
 
+<script>
+    function showHint(str) {
+        if (str.length == 0) {
+            document.getElementById("searchName").innerHTML = "";
+            return;
+        } else {
+            let http = new XMLHttpRequest();
+            http.onreadystatechange = () => {
+                if (http.readyState == 4 && http.status == 200) {
+                    document.getElementById("searchCustomer").innerHTML = http.responseText;
+                    console.log(http.responseText);
+                }
+            };
+            http.open("GET", "/student044/dwes/db/customer/ajax_db_customer_select.php?q=" + str, true);
+            http.send();
+        }
+    }
+</script>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>

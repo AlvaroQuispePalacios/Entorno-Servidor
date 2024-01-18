@@ -30,12 +30,8 @@
             };
             http.open("GET", "/student044/dwes/db/customer/ajax_db_customer_select.php?q=" + str, true);
             http.send();
-            
         }
     }
-    // function showCustomer(customers){
-    //     let 
-    // }
 </script>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
