@@ -4,12 +4,12 @@ function showCustomer($dbCustomer)
 ?>
 
     <div class="card" style="width: 18rem;">
-        <div class="d-flex justify-content-center">
-            <img src="<?php print_r($dbCustomer['customer_img']) ?>" class="card-img-top" alt="" style="padding:1rem; width:12rem">
+        <div class="d-flex justify-content-center align-items-center" style="height: 12rem; padding:1rem">
+            <img src="<?php print_r($dbCustomer['customer_img']) ?>" class="card-img-top" alt="" style="width:10rem">
         </div>
 
         <div class="card-body">
-            <h5 class="card-title"><?php echo $dbCustomer["customer_name"] . " " . $dbCustomer["customer_surname"] ?></h5>
+            <h5 class="card-title text-center"><?php echo $dbCustomer["customer_name"] . " " . $dbCustomer["customer_surname"] ?></h5>
             <p class="card-text">
             <ul>
                 <li>ID: <?php echo ($dbCustomer["customer_id"]) ?></li>

@@ -27,7 +27,7 @@ mysqli_close($con);
 </div>
 
 
-<div class="d-flex justify-content-evenly flex-wrap gap-2" id="searchCustomer">
+<div class="d-flex justify-content-around flex-wrap gap-2" id="searchCustomer">
 
 </div>
 
