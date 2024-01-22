@@ -18,4 +18,5 @@
 </form>
 
 
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
