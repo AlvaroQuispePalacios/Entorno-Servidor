@@ -24,7 +24,7 @@ $file = "./prueba.txt";
         Read and Write 
 */
 $handle = fopen($file, "r+");
-fwrite($handle, "Esto es una nueva linea del fichero\n");
+fwrite($handle, "Esto es una nueva linea del fichero");
 ?>
 
 
