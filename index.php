@@ -63,14 +63,13 @@
         let http = new XMLHttpRequest();
         http.onreadystatechange = () => {
             if (http.readyState == 4 && http.status == 200) {
-                let json = JSON.parse(http.responseText);
-                console.log(json);
+                let jsonFromApi = JSON.parse(http.responseText);
+                console.log(jsonFromApi);
             }
         };
         http.open("GET", "http://dataservice.accuweather.com/currentconditions/v1/305482?apikey=tw93fBWL0LAm3HS0NbvgkHjH0rpv0Nlz", true);
         http.send();
     }
-
 </script>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
