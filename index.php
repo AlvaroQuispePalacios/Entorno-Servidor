@@ -42,7 +42,9 @@
 
 <!-- CARD TIME -->
 <div>
-    <button onclick="showTime()">Llamar a la API</button>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/apis/accu_weather/form_accu_weather.php') ?>
+
+    <!-- <button onclick="getJsonApi()">Llamar a la API</button> -->
 </div>
 <!-- CARD ROOM -->
 <div class="p-4 p-md-5">
@@ -58,8 +60,8 @@
 </div>
 
 
-<script>
-    function showTime() {
+<!-- <script>
+    function getJsonApi() {
         let http = new XMLHttpRequest();
         http.onreadystatechange = () => {
             if (http.readyState == 4 && http.status == 200) {
@@ -70,6 +72,6 @@
         http.open("GET", "http://dataservice.accuweather.com/currentconditions/v1/305482?apikey=tw93fBWL0LAm3HS0NbvgkHjH0rpv0Nlz", true);
         http.send();
     }
-</script>
+</script> -->
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
