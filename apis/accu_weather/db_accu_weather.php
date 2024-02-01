@@ -12,6 +12,7 @@ if (isset($_POST["submit"])) {
     if (file_exists($current_conditions_file)) {
         $current_conditions = json_decode(fread($current_conditions_json, filesize($current_conditions_file)), true);
     }
-    print_r($current_conditions);
+    print_r($current_conditions[0]);
+    echo "<br>";
     fclose($current_conditions_json);
 }

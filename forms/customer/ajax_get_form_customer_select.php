@@ -24,7 +24,7 @@
                     // })
                     // console.log(customers.customer_name);
                     document.getElementById("searchName").innerHTML = http.responseText;
-                    console.log(http.responseText);
+                    // console.log(http.responseText);
 
                 }
             };
