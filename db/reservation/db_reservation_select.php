@@ -15,7 +15,7 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
 
 <div>
-    <input type="text" onkeyup="searchForId(this.value)">
+    <input type="text" onkeyup="searchForId(this.value)" placeholder="Id del usuario">
     <div id="showReservation">
 
     </div>
