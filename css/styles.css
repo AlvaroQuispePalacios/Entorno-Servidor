@@ -320,6 +320,51 @@ input[type="submit"]:focus{
 
 
 }
+/* CSS DE LA TARJETA DE TIEMPO */
+.card-time{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: end;
+    padding: .5rem;
+    border-radius: 5px;
+    min-width: 8rem;
+    min-height: 8rem;
+    background-color: #f1f1f1;
+    /* background-color: #9592c8; */
+}
+
+.card-time-content{
+    min-width: 6.5rem;
+}
+
+.card-time-img{
+    position: absolute;
+    top: -1.1rem;
+    left: -1.1rem;
+    /* width: 100%; */
+}
+
+.card-time-img img{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-left: 2px solid #fff;
+}
+
+.card-time-text{
+    position: relative;
+    font-size: 2rem;
+    text-align: end;
+}
+.card-time-text > span{
+    font-size: 1rem;
+}
+
+.card-time.title{
+    width: 100%;
+    height: 20%;
+}
 
 /*
 

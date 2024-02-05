@@ -42,15 +42,14 @@
 
 <!-- CARD TIME -->
 <div>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/apis/accu_weather/form_accu_weather.php') ?>
-
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/apis/accu_weather/db_accu_weather.php') ?>
     <!-- <button onclick="getJsonApi()">Llamar a la API</button> -->
 </div>
 <!-- CARD ROOM -->
 <div class="p-4 p-md-5">
     <div class="row mt-2">
         <div class="col-12 col-sm-12 col-md-6 card-room__img "></div>
-        <div class="col-12 col-sm-12 col-md-6 order-0 d-flex flex-column justify-content-center align-items-center p-5">
+        <div class="col-12 col-sm-12 col-md-6 order-0 d-flex flex-column justify-content-center align-items-center py-5 px-0">
             <h2 class="fw-bold">Habitaciones</h2>
             <p class="text-start card_room_text">
                 Bienvenido a un enclave de elegancia y sofisticación, donde el lujo encuentra su máxima expresión: nuestras exclusivas habitaciones de <span class="fw-bold">Ducks Hotel</span>. Diseñadas con un toque de opulencia y atención meticulosa a cada detalle, nuestras estancias ofrecen un refugio de confort y distinción.
