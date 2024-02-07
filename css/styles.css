@@ -335,13 +335,15 @@ input[type="submit"]:focus{
 }
 
 .card-time-content{
-    min-width: 6.5rem;
+    min-width: 8.5rem;
+    min-height: 8.5rem;
+
 }
 
 .card-time-img{
     position: absolute;
-    top: -1.1rem;
-    left: -1.1rem;
+    top: -1.2rem;
+    left: -1.2rem;
     /* width: 100%; */
 }
 
@@ -354,11 +356,15 @@ input[type="submit"]:focus{
 
 .card-time-text{
     position: relative;
+    display: flex;
+    flex-direction: column;
     font-size: 2rem;
     text-align: end;
+    margin-top: .7rem;
 }
 .card-time-text > span{
-    font-size: 1rem;
+    /* display: block; */
+    font-size: 1.2rem;
 }
 
 .card-time.title{

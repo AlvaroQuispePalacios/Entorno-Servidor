@@ -14,7 +14,7 @@ $current_conditions;
 if (file_exists($current_conditions_file)) {
     $current_conditions = json_decode(fread($current_conditions_json, filesize($current_conditions_file)), true);
 }
-print_r($current_conditions[0]);
+// print_r($current_conditions[0]);
 echo "<br>";
 fclose($current_conditions_json);
 
@@ -22,14 +22,9 @@ fclose($current_conditions_json);
 
 
 <article class="p-4 p-md-5">
-    <section class="row mt-2">
-        <div class="col-12 col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center py-5 px-0">
-            <h2 class="fw-bold">Tiempo</h2>
-            <p class="text-start card_room_text">
-                Bienvenido a un enclave de elegancia y sofisticación, donde el lujo encuentra su máxima expresión: nuestras exclusivas habitaciones de <span class="fw-bold">Ducks Hotel</span>. Diseñadas con un toque de opulencia y atención meticulosa a cada detalle, nuestras estancias ofrecen un refugio de confort y distinción.
-            </p>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 order-0 py-5 px-0 d-flex gap-2">
+    <section class="row mt-2 d-flex justify-content-center">
+        <h2 class="d-flex justify-content-center fw-bold">Tiempo</h2>
+        <div class="col-12 col-sm-12 col-md-12 order-0 py-5 px-0 d-flex justify-content-center gap-5">
 
             <div class="card-time">
                 <div class="card-time-content">
@@ -37,6 +32,9 @@ fclose($current_conditions_json);
                         <img src="/student044/dwes/img/freddy.webp" alt="Imagen del tiempo">
                     </div>
                     <div class="card-time-text">
+                        <span>
+                            <?php echo date("l", strtotime($current_conditions[0]["LocalObservationDateTime"]));?>
+                        </span>
                         <?php print_r($current_conditions[0]["Temperature"]["Metric"]["Value"]) . " " . print_r($current_conditions[0]["Temperature"]["Metric"]["Unit"]) ?>
 
                         <span>
