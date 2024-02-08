@@ -1,10 +1,11 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
+
 <?php
 function validateInput($input)
 {
     return htmlspecialchars($input);
 }
 ?>
+
 <?php
 if (isset($_POST['submit'])) {
     $reservation_id = validateInput($_POST["reservation_id"]);
@@ -31,4 +32,4 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
+
