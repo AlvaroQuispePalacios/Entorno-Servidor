@@ -4,8 +4,6 @@
 if(isset($_FILES['file'])){
 
     $file = $_FILES['file'];
-    print_r($file);
-    echo "<br>".$file['tmp_name'];
     // Nombre del archivo subido
     $file_name = $file['name'];
    
@@ -26,7 +24,7 @@ if(isset($_FILES['file'])){
     }else {
 
         move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT'].$path_img);
-        echo "Imagen no existe o no es valido, se utilizara una imagen por defecto, luego se podra cambiar la imagen";
+        // echo "Imagen no existe o no es valido, se utilizara una imagen por defecto, luego se podra cambiar la imagen";
 
     }
 }
