@@ -25,7 +25,11 @@
             <label>Precio: </label>
             <input class="w-50" type="number" name="extra_price" step=0.01>
             
-            
+            <!-- Extras Wifi10, minibar -->
+            <label for="wifi">Wifi 100</label>
+            <input type="checkbox" name="wifi" id="wifi">
+            <label for="minibar">Minibar</label>
+            <input type="checkbox" name="minibar" id="minibar">
             <input type="submit" name="submit" value="Agregar extra">
         </div>
         

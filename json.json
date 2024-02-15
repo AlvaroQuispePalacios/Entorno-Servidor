@@ -1,16 +1,6 @@
-{
-    
-    "restaurante": [
-
-    ],
-
-  
-    "bar": [
-
-    ],
-
-    "spa":[
-
-    ]
-  
+{ 
+    "restaurante": [], 
+    "bar": [], 
+    "spa": [] ,
+    "extraReservation": []
 }
