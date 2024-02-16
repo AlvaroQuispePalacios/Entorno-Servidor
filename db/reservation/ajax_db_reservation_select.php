@@ -50,6 +50,7 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
             </td>
             <td>
                 <?php
+                // Calcula el subtotal precioDeLaHabitacion*Dias
                     $price = $reservation['reservation_price'];
                     $date_in = new DateTime($reservation['reservation_date_in']);
                     $date_out = new DateTime($reservation['reservation_date_out']);
@@ -66,24 +67,30 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
             <td>
                 <?php
                 $json = json_decode($reservation['reservation_extras'], true);
+                
                 $total_bar = 0;
                 $total_restaurante = 0;
                 $total_extras = 0;
+
                 ?>
 
                 <?php if ($json === null) { ?>
                     <?php echo "Servicios no encontrados"; ?>
                 <?php } else { ?>
+                    <!-- Mejor llamarlo $extras_keys -->
                     <?php $extras = array_keys($json); ?>
 
                     <section class="section">
+                        <!-- En base a las keys del array lo recorro  -->
                         <?php foreach ($extras as $extra) { ?>
                             <details>
                                 <summary>
                                     <?php echo strtoupper($extra); ?>
                                 </summary>
+                                <!-- Guardamos el array de RESTAURANTE em $service y asi con los demás -->
                                 <?php $service = $json[$extra]; ?>
                                 <ul>
+                                    <!-- Recorro con un bucle la cantidad de elementos que este contiene por EJM: El restaurante podria tener más de 1 entrada ya que el cliente pudo haber ido más dias al restaurante -->
                                     <?php for ($i = 0; $i < sizeof($service); $i++) { ?>
                                         <li>
                                             Nombre: <?php print_r($service[$i]['name']); ?>
@@ -96,7 +103,7 @@ $reservations = mysqli_fetch_all($query, MYSQLI_ASSOC);
                                         </li>
 
                                         <br>
-
+                                        <!-- Calcula el total  -->
                                         <?php $total_extras += $service[$i]['price']; ?>
                                     <?php } ?>
                                 </ul>

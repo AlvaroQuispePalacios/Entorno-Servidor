@@ -1,6 +1,15 @@
-{ 
-    "restaurante": [], 
-    "bar": [], 
-    "spa": [] ,
-    "extraReservation": []
+{
+    "restaurante": [],
+    "bar": [],
+    "spa": [],
+    "extraReservation": [
+        {
+            "name": "WiFi7", 
+            "price": 11
+        },
+        {
+            "name": "minibar",
+            "price": 22
+        }
+    ]
 }
