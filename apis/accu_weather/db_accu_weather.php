@@ -1,12 +1,5 @@
 <?php
-// function readFile($path){
-//     if(file_exists($path)){
-//         return fread(fopen($path, "r"), filesize($path));
-//     }
-// }
 
-// if (isset($_POST["submit"])) {
-// }
 
 
 $current_conditions_file = $_SERVER['DOCUMENT_ROOT'] . "/student044/dwes/apis/accu_weather/accu_weather.json";

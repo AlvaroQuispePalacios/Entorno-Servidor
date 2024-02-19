@@ -313,6 +313,31 @@ $user_img = $_SESSION['user_img'] ?? "";
 									
 								</li>
 
+								<li class="nav-item my-sm-1 my-2">
+									<a href="#accuWeather" data-bs-toggle="collapse" class="nav-link text-white d-flex justify-content-center justify-content-sm-start text-center text-sm-start" aria-current="page">
+										<div>
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="20" width="20" style="enable-background:new 0 0 512 512" xml:space="preserve"><style>.st1,.st7{fill:none;stroke:#000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st7{fill:#f2df98}</style><g id="ICON_1_"><path d="M88 305.8V74.5c0-15.3 12.4-27.7 27.7-27.7h280.5c15.3 0 27.7 12.4 27.7 27.7v231.2" style="fill:#fff;stroke:#000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/><path d="M381.7 305.8h63V340c0 8.1-6.6 14.7-14.7 14.7H82c-8.1 0-14.7-6.6-14.7-14.7v-34.2h249" style="fill:#7585f0;stroke:#000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/><path class="st7" d="M230 10h52v36.8h-52zM282 451v-96.3h-52V502h52"/><path class="st1" d="m289.3 364.7 108 137.3M289.3 364.7l108 137.3M222.7 364.7 114.7 502"/><g><path class="st1" d="m220 89.5 1.7 14M149.7 194.9l-14.1 1.7M289.1 112l-8.5 10.8M182.2 247.7l-8.4 10.7"/><g><path class="st1" d="m169 136-10.8-8.4"/></g></g><path d="M365.6 207.5c2-4.9 3.2-10.4 3.2-16 0-23.3-18.9-42.2-42.2-42.2-3.7 0-7.2.5-10.6 1.3h0c-14.8 3.8-26.4 15.4-30.2 30.2-4.6-4.1-10.7-6.6-17.4-6.6-14.5 0-26.3 11.8-26.3 26.4v6.8h-3.2c-13 0-23.5 10.6-23.5 23.6 0 13 10.5 23.6 23.5 23.6h124.4c13 0 23.5-10.6 23.5-23.6 0-12.3-9.3-22.3-21.2-23.5z" style="fill:#d4f4ff;stroke:#000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/><path d="M238.9 207.4h3.2v-6.8c0-14.6 11.8-26.4 26.3-26.4 2 0 4 .2 5.9.7-5.2-21.4-25.7-36.1-48.1-33.4-24.2 2.9-41.5 24.8-38.6 49 2 16.9 13.4 30.5 28.3 36.1 2-11 11.6-19.2 23-19.2z" style="fill:#e4b75c;stroke:#000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/></g></svg>
+										</div>
+										<span class="ms-2 d-none d-sm-inline">AccuWeather</span>
+									</a>
+
+									<ul class="nav collapse ms-2 ms-sm-2 flex-column " id="accuWeather" data-bs-parent="#menu">
+										<li class="nav-item">
+											<a class="nav-link text-white" href="/student044/dwes/apis/accu_weather/form_accu_weather.php" aria-current="page">API</a>
+										</li>
+										<!-- <li class="nav-item">
+											<a class="nav-link text-white" href="/student044/dwes/forms/reservation/form_reservation_insert_call.php" aria-current="page">Insert</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link text-white" href="/student044/dwes/forms/reservation/form_reservation_update_call.php" aria-current="page">Update</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link text-white" href="/student044/dwes/forms/reservation/form_reservation_delete_call.php" aria-current="page">Delete</a>
+										</li> -->
+									</ul>
+									
+								</li>
+
 								<li class="nav-item">
 									<a href="/student044/dwes/manual_developer.php" class="nav-link text-white d-flex justify-content-center justify-content-sm-start text-center text-sm-start p-2">
 										<span>Manual de desarrollador</span>
