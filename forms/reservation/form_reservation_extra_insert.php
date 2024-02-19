@@ -27,7 +27,7 @@
             <input class="w-50" type="datetime" name="extra_date" placeholder="YY-MM-DD HH-MM-SS">
             <label>Precio: </label>
             <input class="w-50" type="number" name="extra_price" step=0.01>
-            
+            <input type="submit" value="submit" name="submit">
         </div>
         
 

@@ -49,19 +49,6 @@ if (isset($_POST['submit'])) {
 
             <div class="card-body p-3 pt-1">
                 <p class="card-text"><?php print_r($room['room_category_description']) ?></p>
-
-
-                <!-- Cuando presiones se envie a se envie y se cree dentro del Extras-->
-                <h5>Extra</h5>
-                <div class="d-flex extra-reservation">
-                    <p class="m-0 w-80">WiFi7 - 11€</p>
-                    <input type="checkbox" name="extraReservation[]" style="width: 5rem;">
-                </div>
-                <div class="d-flex extra-reservation">
-                    <p class="m-0 w-80">Minibar - 22€</p>
-                    <input type="checkbox" name="extraReservation[]" style="width: 5rem;">
-                </div>
-
                 <div class="text-end">
                     <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/miniForms/mini_form_reservation_insert.php') ?>
                 </div>

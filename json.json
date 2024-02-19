@@ -1,15 +1,11 @@
+
 {
-    "restaurante": [],
-    "bar": [],
-    "spa": [],
-    "extraReservation": [
+    "restaurante":[],
+    "bar":[
         {
-            "name": "WiFi7", 
-            "price": 11
-        },
-        {
-            "name": "minibar",
-            "price": 22
+            "name":"agua",
+            "date":"2023-12-14 18:00:09",
+            "price":"50"
         }
-    ]
-}
+    ],
+    "spa":[]}
