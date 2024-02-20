@@ -1,25 +1,30 @@
 <?php
 
+// Conexion a la base de datos
+include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/db/db_connect.php');
 
+$sql = "SELECT * FROM 044_accu_weather
+        WHERE DATE(accu_weather_inserted_on) >= CURDATE() - INTERVAL 7 DAY 
+        AND accu_weather_inserted_on = (
+            SELECT MAX(accu_weather_inserted_on) 
+            FROM 044_accu_weather 
+            WHERE DATE(accu_weather_inserted_on) = DATE(accu_weather_inserted_on)
+        )
+        GROUP BY DATE(accu_weather_inserted_on)
+        ORDER BY MAX(accu_weather_inserted_on) DESC;";
 
-$current_conditions_file = $_SERVER['DOCUMENT_ROOT'] . "/student044/dwes/apis/accu_weather/accu_weather.json";
-$current_conditions_json = fopen($current_conditions_file, "r");
-$current_conditions;
-if (file_exists($current_conditions_file)) {
-    $current_conditions = json_decode(fread($current_conditions_json, filesize($current_conditions_file)), true);
-}
-// print_r($current_conditions[0]);
-echo "<br>";
-fclose($current_conditions_json);
+$query = mysqli_query($con, $sql);
+$accu_weather = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
+$accu_weather_decode = json_decode($accu_weather[0]["accu_weather_json"], true);
+print_r($accu_weather_decode);
 ?>
-
 
 <article class="p-4 p-md-5">
     <section class="row mt-2 d-flex justify-content-center">
         <h2 class="d-flex justify-content-center fw-bold">Tiempo</h2>
         <div class="col-12 col-sm-12 col-md-12 order-0 py-5 px-0 d-flex justify-content-center gap-5">
-
+            <?php foreach($accu_weather_decode as $current_conditions)?>
             <div class="card-time">
                 <div class="card-time-content">
                     <div class="card-time-img">
@@ -27,97 +32,15 @@ fclose($current_conditions_json);
                     </div>
                     <div class="card-time-text">
                         <span>
-                            <?php echo date("l", strtotime($current_conditions[0]["LocalObservationDateTime"]));?>
+                            <?php print_r(date("l", strtotime($current_conditions["LocalObservationDateTime"])));?>
                         </span>
-                        <?php print_r($current_conditions[0]["Temperature"]["Metric"]["Value"]) . " " . print_r($current_conditions[0]["Temperature"]["Metric"]["Unit"]) ?>
+                        <?php print_r($current_conditions["Temperature"]["Metric"]["Value"]) . " " . print_r($current_conditions["Temperature"]["Metric"]["Unit"]) ?>
 
                         <span>
-                            <?php print_r($current_conditions[0]["WeatherText"]) ?>
+                            <?php print_r($current_conditions["WeatherText"]) ?>
                         </span>
-
-                    </div>
-                </div>
-                <!-- <h4 class="card-time-title">Fecha</h4> -->
-            </div>
-
-            <div class="card-time">
-                <div class="card-time-content">
-                    <div class="card-time-img">
-                        <img src="/student044/dwes/img/freddy.webp" alt="Imagen del tiempo">
-                    </div>
-                    <div class="card-time-text">
-                        34.C
                     </div>
                 </div>
             </div>
-
-            <div class="card-time">
-                <div class="card-time-content">
-                    <div class="card-time-img">
-                        <img src="/student044/dwes/img/freddy.webp" alt="Imagen del tiempo">
-                    </div>
-                    <div class="card-time-text">
-                        34.C
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-time">
-                <div class="card-time-content">
-                    <div class="card-time-img">
-                        <img src="/student044/dwes/img/freddy.webp" alt="Imagen del tiempo">
-                    </div>
-                    <div class="card-time-text">
-                        34.C
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card-time">
-                <div class="card-time-content">
-                    <div class="card-time-img">
-                        <img src="/student044/dwes/img/freddy.webp" alt="Imagen del tiempo">
-                    </div>
-                    <div class="card-time-text">
-                        34.C
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-time">
-                <div class="card-time-content">
-                    <div class="card-time-img">
-                        <img src="/student044/dwes/img/freddy.webp" alt="Imagen del tiempo">
-                    </div>
-                    <div class="card-time-text">
-                        34.C
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-time">
-                <div class="card-time-content">
-                    <div class="card-time-img">
-                        <img src="/student044/dwes/img/freddy.webp" alt="Imagen del tiempo">
-                    </div>
-                    <div class="card-time-text">
-                        34.C
-                    </div>
-                </div>
-            </div>
-
     </section>
 </article>
-
-<!-- <div class="p-4 p-md-5">
-    <div class="row mt-2">
-        <div class="col-12 col-sm-12 col-md-6 card-room__img "></div>
-        <div class="col-12 col-sm-12 col-md-6 order-0 d-flex flex-column justify-content-center align-items-center p-5">
-            <h2 class="fw-bold">Habitaciones</h2>
-            <p class="text-start card_room_text">
-                Bienvenido a un enclave de elegancia y sofisticación, donde el lujo encuentra su máxima expresión: nuestras exclusivas habitaciones de <span class="fw-bold">Ducks Hotel</span>. Diseñadas con un toque de opulencia y atención meticulosa a cada detalle, nuestras estancias ofrecen un refugio de confort y distinción.
-            </p>
-        </div>
-    </div>
-</div> -->
