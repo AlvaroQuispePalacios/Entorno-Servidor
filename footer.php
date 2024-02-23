@@ -53,7 +53,6 @@
 
     <script src="/student044/dwes/js/roomsAvailable.js"></script>
 
-    <script src="/student044/dwes/js/previewReservation.js"></script>
     </body>
 
     </html>

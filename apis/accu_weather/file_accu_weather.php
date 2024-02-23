@@ -1,6 +1,13 @@
 <?php
 
+// $url = "https://dataservice.accuweather.com/currentconditions/v1/305482?apikey=tw93fBWL0LAm3HS0NbvgkHjH0rpv0Nlz&details=true";
+// $json = file_get_contents($url);
+// $datos = json_decode($json, true);
+// $date_now = date("Y-m-d");  
 
+// //crea un nuevo fichero con el json nuevo
+// copy($url, $_SERVER['DOCUMENT_ROOT'] . "/student044/dwes/apis/accu_weather/files/accu_weather.json");
+// copy($url, $_SERVER['DOCUMENT_ROOT'] . "/student034/dwes/apis/accu_weather/files/accu_weather_" . $date_now . ".json");
 
 $current_conditions_file = $_SERVER['DOCUMENT_ROOT'] . "/student044/dwes/apis/accu_weather/accu_weather.json";
 $current_conditions_json = fopen($current_conditions_file, "r");

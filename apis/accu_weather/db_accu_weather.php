@@ -35,6 +35,7 @@ $accu_weather = mysqli_fetch_all($query, MYSQLI_ASSOC);
                             <?php } ?>
                         </div>
                         <div class="card-time-text">
+                            <span><?php print_r(date("d-m-Y", strtotime($current_conditions[0]["LocalObservationDateTime"])))?></span>
                             <span>
                                 <?php print_r(date("l", strtotime($current_conditions[0]["LocalObservationDateTime"]))); ?>
                             </span>

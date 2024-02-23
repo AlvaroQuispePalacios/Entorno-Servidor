@@ -328,8 +328,8 @@ input[type="submit"]:focus{
     justify-content: end;
     padding: .5rem;
     border-radius: 5px;
-    min-width: 8rem;
-    min-height: 8rem;
+    min-width: 10rem;
+    min-height: 10rem;
     background-color: #f1f1f1;
     /* background-color: #9592c8; */
 }
@@ -343,15 +343,14 @@ input[type="submit"]:focus{
 .card-time-img{
     position: absolute;
     top: -1.2rem;
-    left: -1.2rem;
+    left: -4.5rem;
     /* width: 100%; */
 }
 
 .card-time-img img{
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-    border-left: 2px solid #fff;
+    width: 12rem;
+    /* height: 5rem; */
 }
 
 .card-time-text{

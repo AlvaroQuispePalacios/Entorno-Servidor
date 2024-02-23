@@ -18,14 +18,7 @@
             let http = new XMLHttpRequest();
             http.onreadystatechange = () => {
                 if (http.readyState == 4 && http.status == 200) {
-                    // let customers = JSON.parse(http.responseText);
-                    // customers.foreach((customer) => {
-                    //     console.log(customer.customer_name);
-                    // })
-                    // console.log(customers.customer_name);
                     document.getElementById("searchName").innerHTML = http.responseText;
-                    // console.log(http.responseText);
-
                 }
             };
             http.open("GET", "/student044/dwes/db/customer/ajax_db_customer_select.php?q=" + str, true);
