@@ -181,9 +181,11 @@ if ($user_id != NULL || $user_id != "") {
 
     btnReservas.addEventListener("click", () => {
         mostrarReservas("ALL");
-    })
+    });
+
     btnReservasCanceladas.addEventListener("click", () => {
         mostrarReservas("CANCELLED");
     });
+    
 </script>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>

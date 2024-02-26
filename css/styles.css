@@ -380,8 +380,13 @@ input[type="submit"]:focus{
     width: 100%;
     max-height: 200px;
 }
+/* Mostrar los comentarios al administrador */
 
-
+.card-comment-main{
+    border: 1px solid black;
+    max-width: 400px;
+    height: 500px;
+}
 
 /*
 
