@@ -58,6 +58,9 @@
     </div>
 </div>
 
+<div>
+    Proximamente comentarios
+</div>
 
 <!-- <script>
     function getJsonApi() {

@@ -48,9 +48,5 @@ $accu_weather = mysqli_fetch_all($query, MYSQLI_ASSOC);
                     </div>
                 </div>
             <?php } ?>
-
-
-
-
     </section>
 </article>

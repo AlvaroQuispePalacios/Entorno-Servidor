@@ -6,18 +6,17 @@
     $sql = "SELECT * FROM 044_comment";
     $query = mysqli_query($con, $sql);
     $comments = mysqli_fetch_all($query, MYSQLI_ASSOC);
-    print_r($comments);
 
 ?>
 
 <h2>Comentarios</h2>
-
 
 <!-- GET -->
 <!-- <form>
     <label for="userId">Id: </label>
     <input type="text" name="userId" placeholder="Introducir el ID del usuario" onkeyup="searchCommentsByUserId(this.value)">
 </form> -->
+
 <article class="d-flex flex-wrap gap-3 p-3" id="listCommentsByUserId">
     <?php foreach ($comments as $comment) {?>
         <div class="card-comment-main d-flex flex-column p-3">
@@ -30,8 +29,10 @@
             <textarea name="" id="" cols="30" rows="10" readonly><?php print_r($comment["comment_content"])?></textarea>
             <!-- MINIFORM DE ACTUALIZACION -->
             <form action="/student044/dwes/db/comment/db_comment_update.php" method="POST">
-                <input type="text" name="$reservation_id" value="<?php print_r($comment["reservation_id"])?>" readonly>
-                <input type="text" name="$customer_id" value="<?php print_r($comment["customer_id"])?>" readonly>
+                <input type="text" name="reservation_id" value="<?php echo $comment["reservation_id"]?>" readonly>
+                <input type="text" name="customer_id" value="<?php echo $comment["customer_id"]?>" readonly>
+
+
                 <select name="comment_status">
                     <?php if($comment["comment_status"] == "hidden"){ ?>
                         <option value="hidden" selected>Hidden</option>
