@@ -40,7 +40,7 @@
                 <div class="footer__link d-flex row col-12 text-center mt-4">
                     <ul class="d-flex justify-content-center gap-4 list-unstyled ">
                         <li><a href="/student044/dwes/manual_developer.php">Manual de desarrollador</a></li>
-                        <li>Politica de cookeis</li>
+                        <li><a href="/student044/dwes/manual_admin.php">Manual de administrador</a></li>
                         <li>Condiciones generales de reserva</li>
                     </ul>
                 </div>

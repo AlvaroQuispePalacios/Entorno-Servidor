@@ -379,6 +379,12 @@ $user_img = $_SESSION['user_img'] ?? "";
 										<span>Manual de desarrollador</span>
 									</a>
 								</li>
+
+								<li class="nav-item">
+									<a href="/student044/dwes/manual_admin.php" class="nav-link text-white d-flex justify-content-center justify-content-sm-start text-center text-sm-start p-2">
+										<span>Manual de admin</span>
+									</a>
+								</li>
 							</ul>
 
 
