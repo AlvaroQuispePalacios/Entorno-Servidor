@@ -45,6 +45,7 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/apis/accu_weather/db_accu_weather.php') ?>
     <!-- <button onclick="getJsonApi()">Llamar a la API</button> -->
 </div>
+
 <!-- CARD ROOM -->
 <div class="p-4 p-md-5">
     <div class="row mt-2">
@@ -58,9 +59,28 @@
     </div>
 </div>
 
-<div>
-    Proximamente comentarios
+<div class="p-4 p-md-5">
+    <div class="row mt-2">
+
+        <div class="col-12 col-sm-12 col-md-6 order-0 d-flex flex-column justify-content-center align-items-center py-5 px-0">
+            <h2 class="fw-bold">Comentarios</h2>
+            <p class="text-start card_room_text">
+
+                En <span class="fw-bold">Ducks Hotel</span>, nos esforzamos por ofrecer experiencias excepcionales a nuestros huéspedes. Valoramos sinceramente sus comentarios, ya que nos ayudan a mejorar continuamente nuestros servicios. A continuación, encontrará opiniones reales de huéspedes que han compartido su experiencia con nosotros. Estamos encantados de compartir sus comentarios y esperamos que le ayuden a tomar una decisión informada sobre su próxima estancia con nosotros.
+                <br>
+                <br>
+                Nota: Todas las opiniones son reales y verificadas por nuestro equipo.
+            </p>
+        </div>
+        <!-- Contenedor de los card de los comentarios  -->
+        <div class="col-12 col-sm-12 col-md-6 d-flex gap-3 flex-wrap">
+            <?php
+                include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/db/comment/db_comment_select_customer.php');
+            ?>
+        </div>
+    </div>
 </div>
+
 
 <!-- <script>
     function getJsonApi() {

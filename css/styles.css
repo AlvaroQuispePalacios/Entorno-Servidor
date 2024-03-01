@@ -388,19 +388,10 @@ input[type="submit"]:focus{
     height: 500px;
 }
 
-/*
-
-
-
-
-
-
-
-.submit{
-    text-align: center;
+.card-commnet-index{
+    padding: 1rem;
+    width: 29%;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    min-height: 400px;
 }
-
-.submit input[type='submit']{
-    width: 50%;
-}
-*/
