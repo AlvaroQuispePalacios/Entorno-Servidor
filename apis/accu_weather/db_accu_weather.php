@@ -5,7 +5,15 @@ include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/db/db_connect.php');
 $url_icons = $_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/apis/accu_weather/files/accu_weather_icons.json';
 $icons = json_decode(file_get_contents($url_icons), true);
 
-$sql = "SELECT * FROM 044_accu_weather ORDER BY `accu_weather_inserted_on` DESC LIMIT 7";
+// $sql = "SELECT * FROM 044_accu_weather ORDER BY `accu_weather_inserted_on` DESC LIMIT 7";
+$sql = "SELECT * FROM 044_accu_weather
+WHERE (DATE(accu_weather_inserted_on), HOUR(accu_weather_inserted_on)) IN 
+    (SELECT DATE(MAX(accu_weather_inserted_on)), HOUR(MAX(accu_weather_inserted_on)) 
+     FROM 044_accu_weather 
+     WHERE DATE(accu_weather_inserted_on) >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)
+     GROUP BY DATE(accu_weather_inserted_on))
+     ORDER BY `accu_weather_inserted_on` DESC";
+     
 
 // SELECT * FROM `044_accu_weather` as acu 
 // GROUP BY EXTRACT(DAY FROM `accu_weather_inserted_on`)

@@ -1,3 +1,5 @@
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/header.php') ?>
+
 <?php
     if(isset($_POST['submit'])){
         //Conexion a la base de datos
@@ -23,3 +25,4 @@
         }
     }
 ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/footer.php') ?>
