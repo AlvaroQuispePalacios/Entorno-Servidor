@@ -24,7 +24,7 @@
 ?>
 
 
-<form action="/student044/dwes/apis/accu_weather/file_accu_weather.php" method="POST">
+<form action="/student044/dwes/apis/accu_weather/reload_accu_weather.php" method="POST">
     <input type="submit" name="submit" value="submit">
 </form>
 

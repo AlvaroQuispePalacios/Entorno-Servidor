@@ -1,0 +1,7 @@
+
+/*
+- Verifica que el usuario no pueda ir a paginas para el administrador
+- 
+
+*/
+

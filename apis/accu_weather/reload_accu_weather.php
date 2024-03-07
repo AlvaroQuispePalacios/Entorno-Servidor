@@ -7,7 +7,6 @@ $json = file_get_contents($url);
 $datos = json_decode($json, true);
 $date_now = date("Y-m-d");  
 
-// //crea un nuevo fichero con el json nuevo
 copy($url, $_SERVER['DOCUMENT_ROOT'] . "/student044/dwes/apis/accu_weather/files/accu_weather.json");
 copy($url, $_SERVER['DOCUMENT_ROOT'] . "/student044/dwes/apis/accu_weather/files/accu_weather_" . $date_now . ".json");
 
