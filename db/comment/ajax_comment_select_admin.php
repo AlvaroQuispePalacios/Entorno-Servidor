@@ -1,14 +1,10 @@
 <?php
-// $q = $_GET["q"];
 $q = $_POST["q"];
 include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/db/db_connect.php');
 
 $sql = "SELECT * FROM 044_comment WHERE customer_id = $q";
 $query = mysqli_query($con, $sql);
 $comments = mysqli_fetch_all($query, MYSQLI_ASSOC);
-
-// print_r($comments);
-
 
 ?>
 

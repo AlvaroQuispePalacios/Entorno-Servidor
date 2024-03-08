@@ -11,12 +11,6 @@
 
 <h2>Comentarios</h2>
 
-<!-- GET -->
-<!-- <form>
-    <label for="userId">Id: </label>
-    <input type="text" name="userId" placeholder="Introducir el ID del usuario" onkeyup="searchCommentsByUserId(this.value)">
-</form> -->
-
 <article class="d-flex flex-wrap gap-3 p-3" id="listCommentsByUserId">
     <?php foreach ($comments as $comment) {?>
         <div class="card-comment-main d-flex flex-column p-3">
