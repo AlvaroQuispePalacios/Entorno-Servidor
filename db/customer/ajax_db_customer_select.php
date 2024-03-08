@@ -8,7 +8,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/student044/dwes/functions/php/front/showCu
 if ($q != "") {
     //Conexion a la base de datos
 
-    $sql = "SELECT * FROM 044_customer WHERE customer_name LIKE '%$q%' ";
+    $sql = "SELECT * FROM 044_customer WHERE customer_name LIKE '%$q%' OR  customer_surname LIKE '%$q%' ";
     $query = mysqli_query($con, $sql);
     $customers = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
